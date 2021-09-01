@@ -11,6 +11,8 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 ## Integrantes
 
 * Kleber Souza
+* Anakin Skalwaker
+
 ## Orientador
 
 * Kleber Jacques F. de Souza
