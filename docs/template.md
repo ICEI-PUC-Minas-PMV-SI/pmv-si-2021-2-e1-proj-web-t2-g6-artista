@@ -1,10 +1,75 @@
 # Template padrão do site
 
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
+## HTML
 
-> **Links Úteis**:
->
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Ana Valin </title>
+        <meta name="Devs" content="Amanda Linhares e Luiz Rubioli">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+            </style>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Rock+Salt&display=swap');
+                </style>
+    </head>
+
+    <body>
+
+        <div class=home>
+            <button type="button" class="btnAcessoRestrito"> ACESSO RESTRITO </button>
+
+            <div class="redes">
+            
+                <button type="button" class="btnInsta">    </button>
+                <button type="button" class="btnFace">     </button>
+                <button type="button" class="btnTwitter">  </button>
+                <button type="button" class="btnYoutube">  </button>
+                <button type="button" class="btnSpotify">  </button>
+
+              </div>
+
+              <div class=conteudo>
+                <button type="button" class="btnOucaAgora"> OUÇA AGORA </button>
+                <button type="button" class="btnAssistaAgora"> ASSISTA AGORA </button>
+              </div>
+        
+        <header>
+               <h1>Ana Valin</h1>
+        </header>
+
+        <main>
+            
+            <nav class="menu">
+
+                <a class="home" href="#">HOME</a>
+                <a class="agenda" href="#">AGENDA</a>
+                <a class="musica" href="#">MÚSICAS E CLIPES</a>
+                <a class="biografia" href="#">BIOGRAFIA</a>
+                <a class="fas" href="#">CENTRAL DE FÃS</a>
+                <a class="contato" href="#">CONTATO</a>
+
+              </nav>                        
+        </main>
+
+                     
+        <footer> 
+            <div class="rodape">
+                <h6>2021 - TODOS OS DIREITOS RESERVADOS &copy; - ANAVALIN.COM.BR</h6>
+            </div>
+        </footer>
+    </div>
+    </body>
+
+
+</html>
+
+
+## CSS
+
+
