@@ -1,6 +1,16 @@
 # Introdução
 
+## Contexto
+
 A artista independente Ana Valin tem a necessidade de aproximar seus fãs, se destacar no mercado musical e expor seu conteúdo de forma autônoma. Apesar das redes sociais serem uma opção para divulgar seu trabalho, a exposição numa plataforma que não é sua possui alguns riscos, como restrição de conteúdo, plágios e fakes, alteração de layout ou suspenção/remoção de página caso seja violado algum termo. Um site pode ser determinante para suprir sua necessidade pois ela como artista consegue apresentar sua arte da forma que preferir sem os riscos apontados. 
+
+## Referências
+
+[Link 1](https://www.footstepsmarketing.com/the-importance-of-having-a-website-as-an-artist/#:~:text=A%20Website%20Creates%20a%20Sense%20of%20Professionalism&text=A%20website%20is%20a%20great,of%20professionalism%20regarding%20your%20art.)
+
+[Link 2](https://www.artbusiness.com/artist-websites-how-to-increase-traffic-keep-visitors-on-site.html)
+
+[Link 3](https://www.studentartguide.com/articles/how-to-make-an-artist-website)
 
 ## Problema
 
