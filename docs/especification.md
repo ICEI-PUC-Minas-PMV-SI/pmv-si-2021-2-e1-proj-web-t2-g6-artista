@@ -1,76 +1,61 @@
 # Especificações do Projeto
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
-
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+![1](https://user-images.githubusercontent.com/89883284/136262548-6a26ff31-6a9c-4f89-b59b-73d9714531d7.png)
+![2](https://user-images.githubusercontent.com/89883284/136262576-eae4aab1-3259-486c-b6e9-f6a304892081.png)
+![3](https://user-images.githubusercontent.com/89883284/136262591-982eb746-5734-4d51-9dab-e77ee2d3f956.png)
+![4](https://user-images.githubusercontent.com/89883284/136262610-f33581ab-23fd-4d33-8060-cd91cc130a03.png)
+![5](https://user-images.githubusercontent.com/89883284/136262640-6f94a6f4-161d-4d15-961b-18909551f104.png)
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
-
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
+|EU COMO... | QUERO/PRECISO ...  |PARA ...                  |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+| Eu como Ana Valin | preciso gerar relatório do cadastramento de fãs         | para envio de conteúdo exclusivo              |
+| Eu como Ana Valin      | preciso ter acesso como administrador           | para modificar conteúdo do site |
+|Eu como Rafaela Farani| preciso consultar dados do artista|para entrar em contato para propor investimento em sua carreira|
+|Eu como Rafaela Farani|preciso ter acesso a história do artista | para entender se o perfil dele é compatível com o qual desejo investir|
+|Eu como Antonio Silva|preciso acessar o conteúdo do artista|para confirmar se o perfil dele encaixa com o público usual da casa de shows|
+|Eu como Antonio Silva|preciso consultar dados na agenda do artista atualizados e confiáveis|para otimizar o processo de contratação de shows|
+|Eu como Adriana Santos|quero saber quais são as redes sociais oficiais do artista|para acompanhar seu cotidiano e últimos lançamentos|
+|Eu como Adriana Santos|quero cadastrar meus dados de contato|para receber conteúdo exclusivo|
+|Eu como Roberto Bueno|preciso ter acesso aos dados de contato do artista|para negociarmos um contrato com a gravadora|
+|Eu como Roberto Bueno|quero saber quais foram os últimos lançamentos do artista |para propor uma parceria mais atrativa |
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
-## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+
+## Requisitos da aplicação
+
+
 
 ### Requisitos Funcionais
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| O sistema deve permitir o login e logout do administrador do site  | ALTA | 
+|RF-002| O sistema deve permitir gerenciamento da foto de capa, das urls das redes sociais e urls da música e clipe da aba home   | ALTA |
+|RF-003| O sistema deve permitir o cadastro e gerenciamento da agenda de shows   | ALTA | 
+|RF-004| O sistema deve permitir o gerenciamento das urls de músicas / clipes e fotos de capa  | ALTA | 
+|RF-005|  O sistema deve permitir o gerenciamento da biografia | ALTA | 
+|RF-006| O sistema deve permitir o cadastro de fãs  | ALTA | 
+|RF-007| O sistema deve gerar relatório de cadastro de fãs  | MEDIA | 
+|RF-008|  O sistema deve permitir o gerenciamento dos dados de contato | ALTA | 
 
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| O sistema deve ter boa usabilidade | MÉDIA | 
+|RNF-002|  O sistema deve ser responsivo|  MÉDIA | 
+|RNF-003|  O sistema deve ser seguro para o usuário |  MÉDIA | 
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
@@ -82,8 +67,4 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |02| Não pode ser desenvolvido um módulo de backend        |
 
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
