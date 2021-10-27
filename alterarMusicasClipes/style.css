@@ -1,0 +1,252 @@
+*{
+    margin: 0px ;
+    padding: 0px ;
+    border: 0px;
+}
+body{
+    margin: 0px ;
+    padding: 0px ;
+    border: 0px;
+    position: flex;
+    background-image: url("fotos/fotof.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+aside{
+    display: flex;
+    
+}
+
+header{
+    max-width: 100%;
+}
+
+
+.btnAcessoRestrito{
+
+    float: right;
+    width: 156px;
+    height: 35px;
+    background-color: #000000;
+    border: 0;
+    margin-right: 35px;
+    margin-top: 35px;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #C52C2C;
+    clear: both;
+    cursor:pointer;
+}
+
+
+h1{
+    font-family: Rock Salt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 86px;
+    line-height: 229px;
+    color: #FFD234;
+    transform: rotate(-0.02deg);
+    margin-left: 50px;
+    margin-top: 0px;
+
+}
+
+.btnAddMusicaClipe{
+   
+    
+    position: absolute;
+    margin-top:-65px;
+    margin-left: 280px;
+    background: rgba(224, 172, 135, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    width: 339px;
+    height: 62px;
+    font-family: Roboto Slab;
+    font-style: bold;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 53px;
+    text-decoration-line: underline;
+    color: #000000;
+    cursor: pointer;
+    float: right;
+    
+   
+    
+}
+.voltar{
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+    .btnVoltar{
+
+        
+        
+        justify-content: center;
+       margin-top: 30px;
+       margin-left: 120px;
+        background: #000000;
+        border: 5px solid #E5E5E5;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+        width: 130px;
+        height: 43px;
+        cursor: pointer;
+        float: left;
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 30px;
+        color: white;
+        order:2;
+       
+    }
+
+    .btnAntes,.btnDepois{
+        background-color: transparent;
+        color: white;
+        font-size: 70px;
+        cursor: pointer;
+        display: flex;
+        
+
+    }
+
+    .btnAntes{
+        float: left;
+        align-self: center;
+        margin-left: 10px;
+        
+    }
+
+    .card{
+
+        
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+        height: 500px;
+        margin-top: 30px;
+        background: #C4C4C4;
+        margin-left: 15px;
+        
+    }
+
+    .card button{
+        width: 302px;
+        height: 63px;
+        background: rgba(141, 60, 2, 0.3);
+        border-radius: 50px;
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 32px;
+        color: #000000;
+        cursor: pointer;
+        margin-bottom: 30px;
+        margin-left: 20px;
+
+    }
+
+    .card1{
+
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+        height: 500px;
+        margin-left: 30px;
+        background: #C4C4C4;
+        margin-top: 30px;
+        margin-right: 15px;
+        
+    }
+
+    .btnApple{
+        margin-top: 30px;
+    }
+
+    .card1 button{
+        width: 302px;
+        height: 63px;
+        background: rgba(141, 60, 2, 0.3);
+        border-radius: 50px;
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 32px;
+        color: #000000;
+        cursor: pointer;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        
+
+
+    }
+
+    .btnDepois{
+       
+        float:right;
+        align-self: center;
+        margin-right: 10px;
+    }
+
+
+   
+
+    h2{
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 70px;
+        line-height: 95px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-left: 50px;
+        margin-top:120px;
+        float: left;
+        order:1;
+        
+    }
+    .conteudo{
+
+        display: flex;
+        position: relative;
+        width: 63vw;
+        height: 90vh;
+        margin-bottom: 60px;
+        background: rgba(224, 172, 135, 0.3);
+        border-radius: 50px;
+        float: right;
+}
+
+  
+
+    .rodape{
+    position:-webkit-sticky;
+    margin-bottom: -50px;
+    height: 50px;
+    width:100%;
+    bottom:0;
+    line-height: 50px;
+    text-align: center;
+    background-color: #000;
+    clear: both;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+
+ }
+ 
