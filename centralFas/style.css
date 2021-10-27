@@ -1,0 +1,195 @@
+*{
+    margin: 0px ;
+    padding: 0px ;
+    border: 0px;
+}
+body{
+    margin: 0px ;
+    padding: 0px ;
+    border: 0px;
+    position: flex;
+    background-image: url("fotos/fotof.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+header{
+    max-width: 100%;
+}
+.btnAcessoRestrito{
+
+    float: right;
+    width: 156px;
+    height: 35px;
+    background-color: #000000;
+    border: 0;
+    margin-right: 35px;
+    margin-top: 35px;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #C52C2C;
+    clear: both;
+    cursor:pointer;
+}
+
+
+h1{
+    font-family: Rock Salt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 86px;
+    line-height: 229px;
+    color: #FFD234;
+    transform: rotate(-0.02deg);
+    margin-left: 50px;
+    margin-top: 0px;
+
+}
+
+
+    .btnVoltar{
+
+        display: flex;
+        position: relative;
+        float:right;
+        justify-content: center;
+        right: 80px;
+        top: 80px;
+        background: #000000;
+        border: 5px solid #E5E5E5;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+        width: 130px;
+        height: 43px;
+        cursor: pointer;
+
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 30px;
+        color: white;
+    }
+
+.conteudo{
+
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 93vw;
+        height: 80vh;
+        margin-left: 37px;
+        margin-bottom: 60px;
+        background: rgba(224, 172, 135, 0.3);
+        border-radius: 50px;
+       
+}
+
+
+    h2{
+        display: flex;
+        position: relative;
+        float: left;
+        width: 303px;
+        height: 95px;
+        align-self: left;
+        left: 99px;
+        margin-top: 50px;
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 95px;
+        color: #E5E5E5;
+        min-width: 50%;
+    }
+  
+
+   h4{
+        position: relative;
+        width: 775px;
+        height: 63px;
+        top: 40px;
+        background: #C52C2C;
+        border-radius: 50px;
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        align-self: center;
+        text-align: center;
+        line-height: 60px;
+        color: #000000;
+        
+   }
+    
+   .conteudo input{
+        position: relative;
+        width: 775px;
+        height: 63px;
+        top:80px;
+        margin-bottom: 15px;
+        align-self: center;
+        background: rgba(197, 44, 44, 0.5);
+        border-radius: 50px;
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 37px;
+        text-align: center;
+
+    }
+
+    #nome::-webkit-input-placeholder {
+        color: #000;
+    }
+    
+    #Telefone::-webkit-input-placeholder {
+        color: #000;
+    }
+
+    #Email::-webkit-input-placeholder {
+        color: #000;
+    }
+
+
+    #btnLogin{
+    
+        position: relative;
+        width: 60px;
+        height: 60px;
+        border: 0;
+        display: flex;
+        border-radius: 100%;
+        top: 100px;
+        align-self: center;
+        background-image: url("fotos/login2.png");
+        background-size: cover;
+        cursor:pointer;
+    
+      }
+    
+
+
+    .rodape{
+    position:-webkit-sticky;
+    height: 50px;
+    width:100%;
+    bottom:0;
+    line-height: 50px;
+    text-align: center;
+    background-color: #000;
+    clear: both;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+
+ }
+ 
