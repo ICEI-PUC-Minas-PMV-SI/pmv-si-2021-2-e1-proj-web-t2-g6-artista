@@ -1,0 +1,197 @@
+*{
+    margin: 0px ;
+    padding: 0px ;
+    border: 0px;
+}
+body{
+    margin: auto ;
+    padding: 0px ;
+    border: 0px;
+    position: flex;
+    background-image: url("fotos/pexels-photo-9721021.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    
+    
+}
+
+header{
+    max-width: 100%;
+    margin-bottom: -60px;
+}
+.btnAcessoRestrito{
+
+    float: right;
+    width: 156px;
+    height: 35px;
+    background-color: #000000;
+    border: 0;
+    margin-right: 35px;
+    margin-top: 35px;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #C52C2C;
+    clear: both;
+    cursor:pointer;
+}
+
+
+h1{
+    font-family: Rock Salt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 86px;
+    line-height: 229px;
+    color: #FFD234;
+    transform: rotate(-0.02deg);
+    margin-left: 50px;
+    margin-top: 0px;
+
+}
+
+
+    .btnVoltar{
+
+        display: flex;
+        position: relative;
+        float:right;
+        justify-content: center;
+        margin-top: 120px;
+        margin-bottom: 20px;
+        margin-right: 80px;
+        background: #000000;
+        border: 5px solid #E5E5E5;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+        width: 130px;
+        height: 43px;
+        cursor: pointer;
+
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 30px;
+        color: white;
+    }
+
+
+    .btnAltBio{
+        display: flex;
+        position: absolute;
+        left:550px;
+        top: 268px;
+        background: rgba(224, 172, 135, 0.5);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+        width:344px;
+        height: 70px;
+        border:0;
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 65px;
+        text-decoration-line: underline;
+        color: #000000;
+        justify-content: center;
+        cursor: pointer;
+        
+        
+      
+    }
+
+.conteudo{
+
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 93vw;
+        height: 80vh;
+        margin-left: 37px;
+        margin-bottom: 60px;
+        background: rgba(224, 172, 135, 0.3);
+        border-radius: 50px;
+       
+}
+
+    h2{
+        position: relative;
+        top:90px;
+        display: flex;
+        float: left;
+        width: 303px;
+        height: 95px;
+        margin-left: 99px;
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 95px;
+        color: #E5E5E5;
+    }
+  
+
+    .abre {
+    display: flex;
+    position: sticky;
+    width: 85vw;
+    height: 0px;
+    border: 3px solid #000000;
+    margin-left:50px;
+    margin-top: 20px;
+    
+    
+    
+    }
+
+    .texto{
+        display: flex;
+        font-family: Roboto Slab;
+        font-style: normal;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        font-size: 24px;
+        align-content: center;
+        padding: 50px;
+        
+    
+        
+    }
+
+    .fecha{
+
+    display: flex;
+    position: absolute;
+    width: 85vw;
+    height: 0px;
+    border: 3px solid #000000;
+    margin-left:50px;
+    bottom: 20px;
+
+   
+    }
+
+    
+
+    .rodape{
+    position:-webkit-sticky;
+    height: 50px;
+    width:100%;
+    bottom:0;
+    line-height: 50px;
+    text-align: center;
+    background-color: #000;
+    clear: both;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+
+ }
+ 
