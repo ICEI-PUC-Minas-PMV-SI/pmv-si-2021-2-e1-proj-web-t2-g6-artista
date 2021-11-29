@@ -1,0 +1,92 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Ana Valin </title>
+        <meta name="Devs" content="Amanda Linhares e Luiz Rubioli">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styleagendaAddEvento.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+            </style>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Rock+Salt&display=swap');
+                </style>
+    </head>
+
+    <body id="body">
+
+        <header>
+            <button type="button" class="btnAcessoRestrito" onclick="location.href='/indexhome.html'"> LOGOUT ADM  </button>                 
+            <h1>Ana Valin</h1>
+        </header>
+
+        <main>
+            
+                <button type="button" class="btnVoltar" onclick="location.href='/homeAdm.html'"> voltar </button>
+                
+
+
+                <h2>AGENDA</h2>
+                <div class="conteudo"> 
+                    
+                        <h3 class="abre"></h3>
+
+                        <aside>
+
+                            <input  type="text" id="AddData" placeholder= "Adicionar data" > 
+                            <input  type="text" id="AddLocal" placeholder= "Adicionar local">
+                            <button type="submit" class="btnOk" id="btnOk"> </button>
+                            
+                            <input  type="text" id="AddCP" placeholder= "Adicionar Cidade, País">
+                            
+                        </aside>
+                       
+                        <h3 class="fecha"></h3>
+                   
+                    
+                </div>
+              
+            
+          
+                                                        
+        </main>
+                     
+        <footer class="rodape"> 
+                <h6>2021 - TODOS OS DIREITOS RESERVADOS &copy; - ANAVALIN.COM.BR</h6>
+        </footer>
+    
+    </body>
+
+    <script >
+          const fileUpload = localStorage.getItem('fileUpload')
+        document.addEventListener("DOMContentLoaded", () =>{            
+                  
+        if (fileUpload != null){
+            var bodyFoto = document.getElementById("body");
+            bodyFoto.style.backgroundImage = `url(${fileUpload})`;;
+            
+           
+        }
+        else{
+
+        }
+       
+       
+    })
+        const btnOk = document.getElementById('btnOk');
+
+        btnOk.addEventListener('click', (e) => {
+        alert("Salvo com sucesso!");
+        let local = document.getElementById('AddLocal').value;
+        localStorage.setItem('local', local) 
+        let data = document.getElementById('AddData').value;
+        localStorage.setItem('data', data)
+        let cidade = document.getElementById('AddCP').value;
+        localStorage.setItem('cidade', cidade)
+        location.reload() }) 
+    </script>
+
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Ana Valin </title>
+        <meta name="Devs" content="Amanda Linhares e Luiz Rubioli">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylealterarAgenda.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+            </style>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Rock+Salt&display=swap');
+                </style>
+    </head>
+
+    <body id="body">
+
+        <header>
+            <button type="button" class="btnAcessoRestrito" onclick="location.href='/indexhome.html'" > LOGOUT ADM </button>                 
+            <h1>Ana Valin</h1>
+        </header>
+
+        <main>
+            
+                <button type="button" class="btnVoltar" onclick="location.href='/homeAdm.html'"> voltar </button>
+                
+                    <button type="button" class="btnAddEvento" onclick="location.href='/agendaAddEvento.html'"> adicione novo evento  </button>
+
+
+                <h2>AGENDA</h2>
+                <div class="conteudo" id= "conteudo" > 
+                    <p id="eventoOriginal">
+                        <h3 class="abre"></h3>
+                            <aside>
+                            <h4>SAB 26 JUN <br><br><br> ROCK IN RIO LISBOA 2022</h4>
+                            
+                            
+                            <button type="button" class="btnExcluir" id="btnExcluir">    </button>
+                            
+                            
+                            <h5> <br><br><br> Lisboa, Portugal</h5>
+                            </aside>
+
+
+                        <h3 class="fecha"></h3>
+                    </p>
+                </div>
+              
+            
+          
+                                                        
+        </main>
+                     
+        <footer class="rodape"> 
+                <h6>2021 - TODOS OS DIREITOS RESERVADOS &copy; - ANAVALIN.COM.BR</h6>
+        </footer>
+    
+    </body>
+    <script>
+          const fileUpload = localStorage.getItem('fileUpload')
+        document.addEventListener("DOMContentLoaded", () =>{            
+                  
+        if (fileUpload != null){
+            var bodyFoto = document.getElementById("body");
+            bodyFoto.style.backgroundImage = `url(${fileUpload})`;;
+            
+           
+        }
+        else{
+
+        }
+       
+       
+    })
+        var local = localStorage.getItem('local')
+        var  data = localStorage.getItem('data')
+        var cidade = localStorage.getItem('cidade')
+        if(local === null || local === "" && data === null || data === "" &&  cidade === null || cidade === ""){
+            
+            
+        }
+        else{
+        
+        var espaco = `<br><br><br>`
+        var divconteudo = document.getElementById("conteudo")
+        var texto1 =  `<p id="evento"><aside><h4 class= "style" id="dataLocal">`;
+        var espacamento = `<br> <br> <br>`;
+        var texto2 = `</h4> <button type="button" class="btnExcluir1" id="btnExcluir1"></button><h5 class= "style1" id="cidade"> `
+        var texto3 = `</h5> </aside> <h3 class="fecha1"></h3></p>`
+        divconteudo.innerHTML +=   texto1 + data + espacamento + local + texto2 + cidade + texto3; 
+
+        }
+
+        const deletaEventoOriginal = document.getElementById('btnExcluir');
+        deletaEventoOriginal.addEventListener('click', (e) => {
+        e.preventDefault();
+        alert("Deletado com sucesso!");               
+        document.getElementById("eventoOriginal").remove();
+       
+         })
+    
+        
+        const deletaEvento = document.getElementById('btnExcluir1');
+        deletaEvento.addEventListener('click', (e) => {
+        e.preventDefault();
+        alert("Deletado com sucesso!");
+        local = ''
+        data= ''
+        cidade = ''
+        localStorage.setItem('local', local) 
+        localStorage.setItem('data', data)  
+        localStorage.setItem('cidade', cidade)   
+        document.getElementById("evento").remove();
+        location.reload();
+        
+        
+         })
+
+       
+    
+    
+    </script>
+
+
+</html>

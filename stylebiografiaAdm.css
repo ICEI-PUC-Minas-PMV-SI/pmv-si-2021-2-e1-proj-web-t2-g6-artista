@@ -1,0 +1,242 @@
+*{
+    margin: 0px ;
+    padding: 0px ;
+    border: 0px;
+}
+body{
+    
+    background-image: url("fotos/fotof.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    
+}
+
+header{
+    max-width: 100%;
+}
+.btnAcessoRestrito{
+
+    position: relative;
+    float: right;
+    width: 126px;
+    height: 25px;
+    background-color: #000000;
+    border: 0;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    color: #C52C2C;
+    cursor:pointer;
+    top: 35px;
+    right: 35px;
+}
+
+
+h1{
+    display: flex;
+    position: relative;
+    font-family: Rock Salt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 66px;
+    line-height: 229px;
+    color: #FFD234;
+    transform: rotate(-0.02deg);
+    left: 50px;
+    top: -20px;
+    max-width: 60%;
+
+}
+
+
+    .btnVoltar{
+
+        
+        position: relative;
+        float:right;
+        justify-content: center;
+        top: 50px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-right: 80px;
+        background: #000000;
+        border: 3px solid #E5E5E5;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+        width: 110px;
+        height: 33px;
+        cursor: pointer;
+
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 25px;
+        color: white;
+    }
+
+    
+    .btnVoltar:hover{
+        border:3px solid yellow;
+    
+    }
+    .btnAcessoRestrito:hover{
+        border:2px solid yellow;
+        
+    }
+
+    .btnAltBio:hover{
+        border:3px solid yellow;
+        
+    }
+
+    .btnAltBio{
+        display: flex;
+        position: relative;
+        left:380px;
+        top: 68px;
+        background: red;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+        width: 299px;
+        height: 52px;
+        border:0;
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 53px;
+        text-decoration-line: underline;
+        color: #000000;
+        justify-content: center;
+        cursor: pointer;
+       
+    }
+
+    
+
+.conteudo{
+
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 95%;
+        height: 75%;
+        background: rgba(224, 172, 135, 0.3);
+        border-radius: 50px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        
+}
+
+.texto::-webkit-scrollbar {
+    width: 15px;
+    display: flex;
+    position: relative;
+    right: 50px;
+    
+    
+}
+
+.texto::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+   
+ 
+.texto::-webkit-scrollbar-thumb {
+    background: black; 
+    border-radius: 10px;
+}
+
+  
+.texto::-webkit-scrollbar-thumb:hover {
+    background: #FFD234; 
+}
+
+    h2{
+        display: flex;
+        position: relative;
+        float: left;
+        width: 303px;
+        height: 95px;
+        left: 99px;
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 95px;
+        color: #E5E5E5;
+    }
+  
+
+    .abre {
+    
+    width: 90%;
+    height: 0px;
+    border: 3px solid #000000;
+    margin: 0 auto;
+    margin-top: 20px;
+    
+    }
+
+    .texto{
+        font-family: Roboto Slab;
+        font-style: normal;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        font-size: 24px;
+        align-content: center;
+        padding: 10px 50px;
+        overflow-y:scroll;
+        overflow-x: hidden;
+        max-width: 90%;
+        
+    
+        
+    }
+
+    .fecha{
+
+    
+    width: 90%;
+    height: 0px;
+    border: 3px solid #000000;
+    margin: 20px auto;
+    margin-bottom: 20px;
+    clear: both;
+    position: relative;
+    bottom: 1%;
+
+
+   
+    }
+
+    @media (max-width: 768px){
+        .btnVoltar{
+            top: -30px;
+        }
+    }
+
+    
+
+    .rodape{
+  
+    height: 50px;
+    width:100%;
+    bottom:0;
+    line-height: 50px;
+    text-align: center;
+    background-color: #000;
+    clear: both;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+
+ }
+ 
