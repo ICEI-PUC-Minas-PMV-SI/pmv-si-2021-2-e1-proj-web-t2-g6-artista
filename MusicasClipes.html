@@ -1,0 +1,224 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Ana Valin </title>
+        <meta name="Devs" content="Amanda Linhares e Luiz Rubioli">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styleMusicasClipes.css">
+        
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+            </style>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Rock+Salt&display=swap');
+                </style>
+    </head>
+
+    <body id="body">
+                            
+        <header>
+                <button type="button" class="btnAcessoRestrito" onclick="location.href='/login.html'"> ACESSO RESTRITO </button>
+                <h1>Ana Valin</h1>
+        </header>
+
+        <main>
+            
+              
+                <h2>MÚSICAS E CLIPES</h2>
+                <button type="button" class="btnVoltar" onclick="location.href='/indexhome.html'"> voltar </button>
+                
+                <div class="conteudo" id="conteudo"> 
+                 
+                  
+                </div>
+                                                         
+        </main>
+                     
+        <footer class="rodape">             
+                <h6>2021 - TODOS OS DIREITOS RESERVADOS &copy; - ANAVALIN.COM.BR</h6>      
+        </footer>
+    </div>
+    </body>
+    <script>
+        //carregar a foto de fundo
+           const fileUpload = localStorage.getItem('fileUpload')
+        document.addEventListener("DOMContentLoaded", () =>{            
+                  
+        if (fileUpload != null){
+            var bodyFoto = document.getElementById("body");
+            bodyFoto.style.backgroundImage = `url(${fileUpload})`;;
+            
+           
+        }
+        const backgroundCard = localStorage.getItem('backgroundCard')
+        if (backgroundCard !== null){
+        var cardFoto = document.getElementById("card4");
+        cardFoto.style.backgroundImage = `url(${backgroundCard})`;;
+            
+           
+        }
+       
+       
+    })
+    //dar valor as urls dos cards
+      //  setItem(); 
+
+        //card adicionado
+        var urlAppleM = localStorage.getItem('urlAppleM')
+        
+        var urlDeezerM = localStorage.getItem('urlDeezerM')
+        var urlSpotifyM = localStorage.getItem('urlSpotifyM')
+        var urlTidalM = localStorage.getItem('urlTidalM')
+        var urlYoutubeM = localStorage.getItem('urlYoutubeM')
+        if(urlAppleM !== 'null'){
+        
+        var divconteudo = document.getElementById("conteudo")
+        divconteudo.innerHTML += ` <div class="card4" id="card4">
+        <button type="button" class="btnApple" onclick="location.href='${urlAppleM}'"> Apple Music </button>
+        <button type="button" class="btnDeezer" onclick="location.href='${urlDeezerM}'"> Deezer </button>
+        <button type="button" class="btnSpotify" onclick="location.href='${urlSpotifyM}'"> Spotify </button>
+        <button type="button" class="btnTidal" onclick="location.href='${urlTidalM}'"> Tidal </button>
+        <button type="button" class="btnYoutube" onclick="location.href='${urlYoutubeM}'"> Youtube </button></div>`
+    }
+    //card
+        var urlAppleM1 = localStorage.getItem('urlAppleM1')
+        var urlDeezerM1 = localStorage.getItem('urlDeezerM1')
+        var urlSpotifyM1 = localStorage.getItem('urlSpotifyM1')
+        var urlTidalM1 = localStorage.getItem('urlTidalM1')
+        var urlYoutubeM1 = localStorage.getItem('urlYoutubeM1')
+        console.log(urlAppleM1)
+    if (urlAppleM1 !== 'null') { 
+       
+       
+        var divconteudo = document.getElementById("conteudo")
+        divconteudo.innerHTML += ` <div class="card" id="card">
+        <button type="button" class="btnApple" onclick="location.href='${urlAppleM1}'"> Apple Music </button>
+        <button type="button" class="btnDeezer" onclick="location.href='${urlDeezerM1}'"> Deezer </button>
+        <button type="button" class="btnSpotify" onclick="location.href='${urlSpotifyM1}'"> Spotify </button>
+        <button type="button" class="btnTidal" onclick="location.href='${urlTidalM1}'"> Tidal </button>
+        <button type="button" class="btnYoutube" onclick="location.href='${urlYoutubeM1}'"> Youtube </button></div>`
+    }
+    
+    //card1
+        var urlAppleM2 = localStorage.getItem('urlAppleM2')
+        var urlDeezerM2 = localStorage.getItem('urlDeezerM2')
+        var urlSpotifyM2 = localStorage.getItem('urlSpotifyM2')
+        var urlTidalM2 = localStorage.getItem('urlTidalM2')
+        var urlYoutubeM2 = localStorage.getItem('urlYoutubeM2')
+    if (urlAppleM2!== 'null') { 
+       
+        
+        var divconteudo = document.getElementById("conteudo")
+        divconteudo.innerHTML += ` <div class="card1" id="card1">
+        <button type="button" class="btnApple" onclick="location.href='${urlAppleM2}'"> Apple Music </button>
+        <button type="button" class="btnDeezer" onclick="location.href='${urlDeezerM2}'"> Deezer </button>
+        <button type="button" class="btnSpotify" onclick="location.href='${urlSpotifyM2}'"> Spotify </button>
+        <button type="button" class="btnTidal" onclick="location.href='${urlTidalM2}'"> Tidal </button>
+        <button type="button" class="btnYoutube" onclick="location.href='${urlYoutubeM2}'"> Youtube </button></div>`
+    }
+    
+    //card2
+        var urlAppleM3 = localStorage.getItem('urlAppleM3')
+        var urlDeezerM3 = localStorage.getItem('urlDeezerM3')
+        var urlSpotifyM3 = localStorage.getItem('urlSpotifyM3')
+        var urlTidalM3 = localStorage.getItem('urlTidalM3')
+        var urlYoutubeM3 = localStorage.getItem('urlYoutubeM3')
+        
+    if (urlAppleM3 !== 'null' ) { 
+       
+        
+        var divconteudo = document.getElementById("conteudo")
+        divconteudo.innerHTML += ` <div class="card2" id="card2">
+        <button type="button" class="btnApple" onclick="location.href='${urlAppleM3}'"> Apple Music </button>
+        <button type="button" class="btnDeezer" onclick="location.href='${urlDeezerM3}'"> Deezer </button>
+        <button type="button" class="btnSpotify" onclick="location.href='${urlSpotifyM3}'"> Spotify </button>
+        <button type="button" class="btnTidal" onclick="location.href='${urlTidalM3}'"> Tidal </button>
+        <button type="button" class="btnYoutube" onclick="location.href='${urlYoutubeM3}'"> Youtube </button></div>`
+    }
+    
+    //card3
+        var urlAppleM4 = localStorage.getItem('urlAppleM4')
+        var urlDeezerM4 = localStorage.getItem('urlDeezerM4')
+        var urlSpotifyM4 = localStorage.getItem('urlSpotifyM4')
+        var urlTidalM4 = localStorage.getItem('urlTidalM4')
+        var urlYoutubeM4 = localStorage.getItem('urlYoutubeM4')
+    if (urlAppleM4 !== 'null' ) { 
+       
+        
+        var divconteudo = document.getElementById("conteudo")
+        divconteudo.innerHTML += ` <div class="card3" id="card3">
+        <button type="button" class="btnApple" onclick="location.href='${urlAppleM4}'"> Apple Music </button>
+        <button type="button" class="btnDeezer" onclick="location.href='${urlDeezerM4}'"> Deezer </button>
+        <button type="button" class="btnSpotify" onclick="location.href='${urlSpotifyM4}'"> Spotify </button>
+        <button type="button" class="btnTidal" onclick="location.href='${urlTidalM4}'"> Tidal </button>
+        <button type="button" class="btnYoutube" onclick="location.href='${urlYoutubeM4}'"> Youtube </button></div>`
+    }
+  
+
+/*
+    function setItem (){
+        var urlAppleM1 = 'https:/www.apple.com/br/apple-music/'
+        localStorage.setItem('urlAppleM1', urlAppleM1 )
+        var urlDeezerM1 = 'https:/www.deezer.com/br'
+        DeezerM1 = localStorage.setItem('urlDeezerM1',urlDeezerM1)
+        var urlSpotifyM1 = 'https:/www.spotify.com/br'
+        localStorage.setItem('urlSpotifyM1',urlSpotifyM1)
+        var urlTidalM1 = 'https:/tidal.com/'
+        localStorage.setItem('urlTidalM1', urlTidalM1)
+        var urlYoutubeM1 = 'https:/www.youtube.com'
+        localStorage.setItem('urlYoutubeM1', urlYoutubeM1)
+        
+        var urlAppleM2 = 'https:/www.apple.com/br/apple-music/'
+        localStorage.setItem('urlAppleM2', urlAppleM2 )
+        var urlDeezerM2 = 'https:/www.deezer.com/br'
+        DeezerM1 = localStorage.setItem('urlDeezerM2',urlDeezerM2)
+        var urlSpotifyM2 = 'https:/www.spotify.com/br'
+        localStorage.setItem('urlSpotifyM2',urlSpotifyM2)
+        var urlTidalM2 = 'https:/tidal.com/'
+        localStorage.setItem('urlTidalM2', urlTidalM2)
+        var urlYoutubeM2 = 'https:/www.youtube.com'
+        localStorage.setItem('urlYoutubeM2', urlYoutubeM2)
+
+        var urlAppleM3 = 'https:/www.apple.com/br/apple-music/'
+        localStorage.setItem('urlAppleM3', urlAppleM3 )
+        var urlDeezerM3 = 'https:/www.deezer.com/br'
+        DeezerM1 = localStorage.setItem('urlDeezerM3',urlDeezerM3)
+        var urlSpotifyM3 = 'https:/www.spotify.com/br'
+        localStorage.setItem('urlSpotifyM3',urlSpotifyM3)
+        var urlTidalM3 = 'https:/tidal.com/'
+        localStorage.setItem('urlTidalM3', urlTidalM3)
+        var urlYoutubeM3 = 'https:/www.youtube.com'
+        localStorage.setItem('urlYoutubeM3', urlYoutubeM3)
+
+        var urlAppleM4 = 'https:/www.apple.com/br/apple-music/'
+        localStorage.setItem('urlAppleM4', urlAppleM4 )
+        var urlDeezerM4 = 'https:/www.deezer.com/br'
+        DeezerM1 = localStorage.setItem('urlDeezerM4',urlDeezerM4)
+        var urlSpotifyM4 = 'https:/www.spotify.com/br'
+        localStorage.setItem('urlSpotifyM4',urlSpotifyM4)
+        var urlTidalM4 = 'https:/tidal.com/'
+        localStorage.setItem('urlTidalM4', urlTidalM4)
+        var urlYoutubeM4 = 'https:/www.youtube.com'
+        localStorage.setItem('urlYoutubeM4', urlYoutubeM4)
+
+        var urlAppleM5 = 'https:/www.apple.com/br/apple-music/'
+        localStorage.setItem('urlAppleM5', urlAppleM5 )
+        var urlDeezerM5 = 'https:/www.deezer.com/br'
+        DeezerM1 = localStorage.setItem('urlDeezerM5',urlDeezerM5)
+        var urlSpotifyM5 = 'https:/www.spotify.com/br'
+        localStorage.setItem('urlSpotifyM5',urlSpotifyM5)
+        var urlTidalM5 = 'https:/tidal.com/'
+        localStorage.setItem('urlTidalM5', urlTidalM5)
+        var urlYoutubeM5 = 'https:/www.youtube.com'
+        localStorage.setItem('urlYoutubeM5', urlYoutubeM5)
+     
+      
+    }  */
+
+    </script>
+
+
+</html>
