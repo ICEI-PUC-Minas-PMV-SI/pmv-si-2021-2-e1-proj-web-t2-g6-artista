@@ -1,47 +1,59 @@
-
 # Projeto de Interface
 
-
 ## User Flow
-
-![user-flow](https://user-images.githubusercontent.com/89883284/136265753-8ea62925-a9bd-48a0-bf0d-743f09e9d406.png)
-
-
+![user-flow](https://user-images.githubusercontent.com/85028708/144727911-be150803-5138-453c-84e1-4c93394e3c4d.png)
 
 ## Wireframes
+
 ### HOME
-![1 HOME](https://user-images.githubusercontent.com/85028708/136248050-fd5f89fd-63d0-4a1c-be44-92e2e010c246.jpg)
+
+![1 HOME](https://user-images.githubusercontent.com/85028708/144728133-6d01b94f-31db-495e-bc8a-d16925c5dd45.jpg)
+
 ### AGENDA
-![2 AGENDA](https://user-images.githubusercontent.com/85028708/136248110-116a173d-0fa3-42fe-aaed-6c680828c8ec.jpg)
+
+![2 AGENDA](https://user-images.githubusercontent.com/85028708/144727928-e1036180-0fac-4c43-99df-3b600501ccd5.jpg)
+
 ### MÚSICAS E CLIPES
-![3 MUSICAS-E-CLIPES](https://user-images.githubusercontent.com/85028708/136248122-2713c05e-cc18-40e9-aa78-43b36f0e1c15.png)
+![3 MUSICAS-E-CLIPES](https://user-images.githubusercontent.com/85028708/144727951-ecaa17dd-f8ee-46aa-96bc-f490039c6de7.png)
+
 ### BIOGRAFIA
-![4 BIOGRAFIA](https://user-images.githubusercontent.com/85028708/136248132-669934af-bd19-4667-ac02-a93916cf4ff1.png)
+![4 BIOGRAFIA](https://user-images.githubusercontent.com/85028708/144727931-46df3b0e-0d9e-430c-b7b5-b74ccac76b76.png)
+
 ### CENTRAL DE FÂS
-![5 CENTRAL DE FAS](https://user-images.githubusercontent.com/85028708/136248142-8aec4bb7-21e0-41d0-b885-abb206581c55.png)
+![5 CENTRAL DE FAS](https://user-images.githubusercontent.com/85028708/144727934-d0b437b6-84c0-48db-a867-86b7855c923f.png)
+
 ### CONTATO
-![6 CONTATO](https://user-images.githubusercontent.com/85028708/136248567-2aae51cc-ae2e-484f-a5f5-63a233466ca1.png)
+![6 CONTATO](https://user-images.githubusercontent.com/85028708/144727936-b9d8f1e4-a518-44da-8078-3995635d05d6.png)
+
 ### LOGIN
-![7 LOGIN](https://user-images.githubusercontent.com/85028708/136248711-7c62b6bf-d03f-4a45-956e-bdf7faa25b49.jpg)
+![7 LOGIN](https://user-images.githubusercontent.com/85028708/144727938-9bcd0aaa-4f04-44dd-9cb8-2f41e1974595.jpg)
+
 ### HOME ADM
-![8 HOME ADM](https://user-images.githubusercontent.com/85028708/136248803-4d273674-f8a6-4a24-bc4e-6bb006d12503.jpg)
+![8 HOME ADM](https://user-images.githubusercontent.com/85028708/144727941-7cab0e7f-dd17-4e47-a800-613af0e7b99d.jpg)
+
 ### ALTERAR HOME
-![9 ALTERAR HOME](https://user-images.githubusercontent.com/85028708/136248470-52fb2602-1267-4591-9ed3-fd80bd64ff9e.png)
+![9 ALTERAR HOME](https://user-images.githubusercontent.com/85028708/144727942-6ed28f13-83b5-445d-902f-5abc2b8a128b.png)
+
 ### ALTERAR AGENDA
-![10 ALTERAR AGENDA](https://user-images.githubusercontent.com/85028708/136248867-e47868d9-b1e1-4b2c-8380-90ee41d7512b.jpg)
+![10 ALTERAR AGENDA](https://user-images.githubusercontent.com/85028708/144727943-6da6e418-265d-4600-a667-c49f2b84f885.jpg)
+
 ### ADICIONAR EVENTO NA AGENDA
-![11 AGENDA-ADD-EVENTO](https://user-images.githubusercontent.com/85028708/136248955-a1d510d5-48e7-4734-b95e-9adf849e4f07.jpg)
+![11 AGENDA-ADD-EVENTO](https://user-images.githubusercontent.com/85028708/144727945-e5b44eac-b2fc-4538-ac9c-1eb39c9ee2dc.jpg)
+
 ### ALTERAR MÚSICAS E CLIPES
-![12 ALTERAR MUSICAS E CLIPES](https://user-images.githubusercontent.com/85028708/136249006-7b3d6957-c5c3-4f54-bf1e-08ae21970254.png)
+![12 ALTERAR MUSICAS E CLIPES](https://user-images.githubusercontent.com/85028708/144727964-454aca94-1bb4-48d8-a45f-088537fb45b6.png)
+
 ### ADICIONAR MÚSICAS E CLIPES
-![13 ADD-MUSICAS-E-CLIPES](https://user-images.githubusercontent.com/85028708/136249090-f902b0f4-ba96-46e8-bc6e-4e3e4f4845d5.png)
+![13 ADD-MUSICAS-E-CLIPES](https://user-images.githubusercontent.com/85028708/144727966-137f59bc-5ff8-4591-a8d6-8b6b2cfc641f.png)
+
 ### BIOGRAFIA ADM
-![14 BIOGRAFIA-ADM](https://user-images.githubusercontent.com/85028708/136249319-504a05af-793d-4e96-bafc-e173df247e71.jpg)
+![14 BIOGRAFIA-ADM](https://user-images.githubusercontent.com/85028708/144727968-a21fb889-6355-43f7-8247-76e7f3b4bfda.jpg)
+
 ### ALTERAR BIOGRAFIA
-![15 ALTERAR BIOGRAFIA](https://user-images.githubusercontent.com/85028708/136249383-b2712063-7dab-48f1-87e8-567b0980ef60.jpg)
+![15 ALTERAR BIOGRAFIA](https://user-images.githubusercontent.com/85028708/144727969-492f826e-1d70-4201-b1af-fac82f559233.jpg)
+
 ### GERENCIAMENTO CENTRAL DE FÃS
-![16 GERENCIAR-CENTRAL-DE-FAS](https://user-images.githubusercontent.com/85028708/136249471-6dc1b303-0a8b-4cb0-9feb-f47d257e1c3a.jpg)
+![16 GERENCIAR-CENTRAL-DE-FAS](https://user-images.githubusercontent.com/85028708/144727977-8dbde095-423f-4024-b34f-94888ea4389a.jpg)
+
 ### ALTERAR CONTATO
-![17 ALTERAR CONTATO](https://user-images.githubusercontent.com/85028708/136249534-ac9df8b0-d739-4b34-80df-6393021c49b1.jpg)
-
-
+![17 ALTERAR CONTATO](https://user-images.githubusercontent.com/85028708/144727981-d205ae9a-843d-4c43-b33d-8e66328318ab.jpg)
