@@ -2,15 +2,13 @@
 
 ## Personas
 
-![1](https://user-images.githubusercontent.com/89883284/136262548-6a26ff31-6a9c-4f89-b59b-73d9714531d7.png)
-![2](https://user-images.githubusercontent.com/89883284/136262576-eae4aab1-3259-486c-b6e9-f6a304892081.png)
-![3](https://user-images.githubusercontent.com/89883284/136262591-982eb746-5734-4d51-9dab-e77ee2d3f956.png)
-![4](https://user-images.githubusercontent.com/89883284/136262610-f33581ab-23fd-4d33-8060-cd91cc130a03.png)
-![5](https://user-images.githubusercontent.com/89883284/136262640-6f94a6f4-161d-4d15-961b-18909551f104.png)
-
+![11](https://user-images.githubusercontent.com/85028708/144727776-723ad3a8-9e18-43b6-8be5-d479bcbc3496.png)
+![12](https://user-images.githubusercontent.com/85028708/144727757-c1924561-dabc-49f4-9150-c59eb8a7e327.png)
+![13](https://user-images.githubusercontent.com/85028708/144727758-e70e7f24-7fc4-4aa4-8d67-5298db84a37b.png)
+![14](https://user-images.githubusercontent.com/85028708/144727764-f1a61a76-1ddb-4376-bf01-0ca83b5ee879.png)
+![15](https://user-images.githubusercontent.com/85028708/144727772-7f2aba24-3a2d-446f-889f-2fd528ab6914.png)
 
 ## Histórias de Usuários
-
 
 |EU COMO... | QUERO/PRECISO ...  |PARA ...                  |
 |--------------------|------------------------------------|----------------------------------------|
@@ -25,17 +23,11 @@
 |Eu como Roberto Bueno|preciso ter acesso aos dados de contato do artista|para negociarmos um contrato com a gravadora|
 |Eu como Roberto Bueno|quero saber quais foram os últimos lançamentos do artista |para propor uma parceria mais atrativa |
 
-
-
-
-
 ## Requisitos da aplicação
-
-
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
+|  ID  | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
 |RF-001| O sistema deve permitir o login e logout do administrador do site  | ALTA | 
 |RF-002| O sistema deve permitir gerenciamento da foto de capa, das urls das redes sociais e urls da música e clipe da aba home   | ALTA |
@@ -46,7 +38,6 @@
 |RF-007| O sistema deve gerar relatório de cadastro de fãs  | MEDIA | 
 |RF-008|  O sistema deve permitir o gerenciamento dos dados de contato | ALTA | 
 
-
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
@@ -54,8 +45,6 @@
 |RNF-001| O sistema deve ter boa usabilidade | MÉDIA | 
 |RNF-002|  O sistema deve ser responsivo|  MÉDIA | 
 |RNF-003|  O sistema deve ser seguro para o usuário |  MÉDIA | 
-
-
 
 ## Restrições
 
@@ -65,6 +54,3 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
 |02| Não pode ser desenvolvido um módulo de backend        |
-
-
-
