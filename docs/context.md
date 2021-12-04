@@ -47,4 +47,6 @@ O público alvo desta aplicação está direcionado:
 
 
 ## Mapa Stakeholder
-![6](https://user-images.githubusercontent.com/85028708/136225629-721c58cf-1702-4057-9889-3037e68df1a5.png)
+![16](https://user-images.githubusercontent.com/85028708/144727714-d1b2318c-09d5-4bf5-b975-796360979c12.png)
+
+
