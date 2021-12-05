@@ -107,10 +107,10 @@ h1{
         font-style: normal;
         font-weight: bold;
         font-size: 22px;
-        line-height: 53px;
         text-decoration-line: underline;
         color: #000000;
         justify-content: center;
+        align-items: center;
         cursor: pointer;
        
     }

@@ -9,60 +9,41 @@
         <link rel="stylesheet" href="stylebiografia.css">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
-            </style>
-            <style>
                 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Rock+Salt&display=swap');
                 </style>
     </head>
 
     <body id="body">
-
         <header>
             <button type="button" class="btnAcessoRestrito" onclick="location.href='/login.html'"> ACESSO RESTRITO </button>                 
             <h1>Ana Valin</h1>
         </header>
-
         <main>
-            
                 <button type="button" class="btnVoltar" onclick="location.href='/indexhome.html'"> voltar </button>
                 <h2>BIOGRAFIA</h2>
                 <div class="conteudo"> 
-                    
                         <h3 class="abre"></h3>
+                        <!--local onde será impresso a biografia-->
                             <p class="texto" id="texto">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quia excepturi dolores minus temporibus voluptates ab ipsum labore similique explicabo!Lorem ipsum dolor sit amet consectetur adipisicing . Perferendis itaque repudiandae repellendus! Minima eum voluptas eos, iure rem necessitatibus est consectetur veritatis maiores non soluta dicta assumenda fuga earum veniam delectus minus quas vitae corporis inventore repellendus magnam? Nihil at perspiciatis, illo consequuntur eaque ipsa ab laborum commodi. Non ipsa dignissimos, quidem deleniti at vitae fuga soluta quia illo natus quod dolores rerum ea quis aperiam eius adipisci, necessitatibus veritatis earum vel. Adipisci libero saepe distinctio inventore consequatur qui excepturi perspiciatis ad nisi aliquam, dignissimos expedita quisquam vero minima quaerat nemo consequuntur, corrupti odio quam optio. Debitis laborum itaque vel praesentium nulla quisquam aliquam non soluta placeat voluptatem modi voluptatibus doloribus deleniti, facere ipsum saepe porro! Ratione provident praesentium cum.
                             </p>
-
                         <h3 class="fecha"></h3>
-                    
-                </div>
-                                                   
-        </main>
-                     
+                </div>                                        
+        </main>               
         <footer class="rodape"> 
                 <h6>2021 - TODOS OS DIREITOS RESERVADOS &copy; - ANAVALIN.COM.BR</h6>
-        </footer>
-    
+        </footer>   
     </body>
-
     <script>
-          const fileUpload = localStorage.getItem('fileUpload')
-        document.addEventListener("DOMContentLoaded", () =>{            
-                  
+        //script para carregar a foto de fundo 
+        const fileUpload = localStorage.getItem('fileUpload')
+        document.addEventListener("DOMContentLoaded", () =>{                            
         if (fileUpload != null){
             var bodyFoto = document.getElementById("body");
             bodyFoto.style.backgroundImage = `url(${fileUpload})`;;
-            
-           
         }
-        else{
-
-        }
-       
-       
     })
+    //script para impressão da biografia 
         let biografia = localStorage.getItem('biografia')
         document.getElementById('texto').innerHTML = biografia;
     </script>
-
 </html>

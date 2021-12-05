@@ -4,19 +4,15 @@
     border: 0px;
 }
 body{
-   
     background-image: url("fotos/fotof.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
-    
 }
-
 header{
     max-width: 100%;
 }
 .btnAcessoRestrito{
-
     position: relative;
     float: right;
     width: 126px;
@@ -32,8 +28,6 @@ header{
     top: 35px;
     right: 35px;
 }
-
-
 h1{
     display: flex;
     position: relative;
@@ -47,17 +41,12 @@ h1{
     left: 50px;
     top: -20px;
     max-width:60%;
-
 }
-
-
-
 .btnAddEvento{
-
     position: relative;
-    top: 15px;
+    bottom: 10px;
     justify-content: center;
-    left: 50px;
+    left: 300px;
     background: red;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
@@ -67,52 +56,39 @@ h1{
     font-style: normal;
     font-weight: 900;
     font-size: 22px;
-    line-height: 42px;
+    line-height: 22px;
     text-decoration-line: underline;
     color: #000000;
     cursor: pointer;
 }
-
 .btnEditar:hover{
     border:4px solid yellow;
     
 }
-
 .btnExcluir:hover{
-    border:4px solid yellow;
-    
+    border:4px solid yellow;  
 }
 .btnAddEvento:hover{
     border:5px solid yellow;
-
 }
 .btnVoltar:hover{
     border:3px solid yellow;
-
 }
 .btnAcessoRestrito:hover{
     border:2px solid yellow;
-    
 }
 .btnEditar1:hover{
-    border:4px solid yellow;
-    
+    border:4px solid yellow;  
 }
-
 .btnExcluir1:hover{
     border:4px solid yellow;
-    
 }
-
-
     .btnVoltar{
-
         display: flex;
         position: relative;
         float:right;
         justify-content: center;
-        top: 40px;
-        bottom: 20px;
+        bottom: 0px;
         right: 80px;
         background: #000000;
         border: 3px solid #E5E5E5;
@@ -121,7 +97,6 @@ h1{
         width: 110px;
         height: 33px;
         cursor: pointer;
-
         font-family: Roboto Slab;
         font-style: normal;
         font-weight: 900;
@@ -129,22 +104,16 @@ h1{
         line-height: 25px;
         color: white;
     }
-     
     @media (max-width:768px){
         .btnVoltar{
             top: 20px;
         }
-
         .btnAddEvento{
             top: 70px;
            left: 350px;
         }
     }
-
-    
-
 .btnExcluir{
-      
     display: flex;
     position: relative;
     background-image: url("fotos/add1.png");
@@ -158,13 +127,8 @@ h1{
     background-size: cover;
     cursor: pointer;
     margin-right: 70px;
-   
-
-
 }
-
 .btnEditar{
-
     display: flex;
     position: relative;
     background-image: url("fotos/editar1.png");
@@ -178,11 +142,8 @@ h1{
     cursor: pointer;
     margin-right: 60px;
     margin-bottom: 10px;
-    
-
 }
 .conteudo{
-
     display: flex;
         position: relative;
         flex-direction: column;
@@ -193,8 +154,6 @@ h1{
         margin: 0 auto;
         margin-bottom: 60px;
 }
-
-
     h2{
         display: flex;
         position: relative;
@@ -209,8 +168,6 @@ h1{
         line-height: 95px;
         color: #E5E5E5;
     }
-  
-
     .abre {
         display: flex;
         position: relative;
@@ -221,12 +178,8 @@ h1{
         margin-right: auto;
         margin-top: 20px;
         margin-bottom: 8px;
-        
-    
     }
-
     .fecha{
-
         display: flex;
         position: relative;
         width: 90%;
@@ -235,10 +188,7 @@ h1{
         margin-left: auto;
         margin-right: auto; 
         margin-top: 8px;
-    
-   
     }
-
     h4{
         position: relative;
         float: left;
@@ -254,7 +204,6 @@ h1{
         line-height: 18px;
         color: #FAFF00;
     }
-
     h5{
         display: flex;
         float:right;
@@ -266,13 +215,8 @@ h1{
         color: #FAFF00;
         margin-right: -55px;
         margin-top: 5px;
-        
-
     }
-
-
     .btnExcluir1{
-      
         display: flex;
         position: relative;
         background-image: url("fotos/add1.png");
@@ -286,14 +230,9 @@ h1{
         background-size: cover;
         cursor: pointer;
         margin-right: 70px;
-        margin-top: 0px;
-       
-    
-    
-    }
-    
+        top: 8px;
+    }    
     .btnEditar1{
-    
         display: flex;
         position: relative;
         background-image: url("fotos/editar1.png");
@@ -306,17 +245,40 @@ h1{
         background-size: cover;
         cursor: pointer;
         margin-right: 60px;
-        
         margin-top: 7px;
-        
-    
     }
-
     .style{
         position: relative;
         float: left;
-        margin-top: 18px;
+        margin-top: 10px;
         margin-bottom: 0px;
+        width: 359px;
+        height: 25px;
+        left: 83px;
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 18px;
+        color: #FAFF00; 
+    }
+    .style1{
+        display: flex;
+        float:right;
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FAFF00;
+        margin-right: -60px;
+        margin-top: 80px;
+    }
+    .style2{
+        position: relative;
+        float: left;
+        margin-top: 17px;
+        bottom: 5px;
         width: 359px;
         height: 25px;
         left: 83px;
@@ -328,8 +290,7 @@ h1{
         color: #FAFF00;
     
     }
-
-    .style1{
+    .style3{
         display: flex;
         float:right;
         font-family: Roboto Slab;
@@ -338,14 +299,13 @@ h1{
         font-size: 16px;
         line-height: 20px;
         color: #FAFF00;
-        margin-right: -95px;
+        margin-right: -60px;
         margin-top: 80px;
+        margin-bottom: 3px;
         
 
     }
-
     .fecha1{
-
         display: flex;
         position: relative;
         width: 90%;
@@ -354,13 +314,8 @@ h1{
         margin-left: auto;
         margin-right: auto; 
         margin-top:6px;
-    
-   
     }
-
-
     .rodape{
-   
     height: 50px;
     width:100%;
     bottom:0;
@@ -373,6 +328,5 @@ h1{
     font-weight: bold;
     font-size: 18px;
     color: #FFFFFF;
-
  }
  
