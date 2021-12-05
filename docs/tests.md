@@ -1,6 +1,8 @@
 # Plano de Testes de Software
 
-|	Tipo do Teste	|	Subtipo	do Teste 	|	Objetivo	 do Teste	 | 	Requisito que motivaram esse teste	| 
+### Requisitos Funcionais e Não Funcionais
+
+|	Tipo do Teste	|	Subtipo	do Teste 	|	Objetivo	 do Teste	 | 	Requisitos que motivaram esse teste	| 
 |---------------|-------------------|---------------------|-------------------------------------|
 |	Funcional |	 Requisitos 	| Testar a funcionalidade referente permissão com credenciais para acesso do administrador no site | RF001 - O sistema deve permitir o login e logout do administrador do site | 
 |	Funcional |	 Requisitos 	| Testar a funcionalidade referente alterações de foto e url’s na aba HOME | RF002 - O sistema deve permitir gerenciamento da foto de capa, das url’s das redes sociais e url’s da música e clipe da aba home|
@@ -13,6 +15,34 @@
 |	Não Funcional |	 Usabilidade	| Testar se o site está sendo apresentado de forma clara, objetiva e de fácil navegação para o usuário| RNF001 - O sistema deve ter boa usabilidade|
 |	Não Funcional |	 Implementação	| Testar se todos os elementos da página respondem corretamente ao display em que está sendo visualizado| RNF002 - O sistema deve ser responsivo|
 |	Não Funcional |	 Segurança	| Testar se as alterações de dados do site são de acesso restrito ao administrador| RNF-003 - O sistema deve ser seguro para o usuário |
+
+### Casos de Uso 
+
+|	Caso de Uso	  |ID|				Passos				| 	Resultado Esperado	|
+|---------------|--|--------------|---------------------|
+|	Fazer login 	 |1|		Acessar qualquer página do site			| 	Página será exibida	|
+|			      |2| 		Clicar no botão superior direito “Acesso restrito” 	|	A página para fazer login será exibida|	
+|			      |3| 			Informar usuário e senha		 	|Os campos devem receber os dados digitados e direcionar para HOME do administrador|
+|    |    |    |    |
+|Cadastrar evento na agenda|1|		Fazer login como administrador 			     |	Página HOME do administrador será exibida  |
+|			      |2| 		Clicar no botão editar ao lado da palavra “AGENDA”	     |	A página para fazer alteração na agenda será exibida|
+|			      |3| 		Clicar no botão “adicione novo evento” 		     |	A página para fazer a adição do evento na agenda será exibida|
+|			      |4| 		Preencher os campos solicitados			     |	Os campos devem receber os dados digitados 	|	
+|			      |5| 		Clicar no botão check ao lado direito da página		     |	O sistema deve exibir a mensagem “Salvo com sucesso!” 	|
+|    |    |    |    |
+|Cadastrar nova música/clipe|1|		Fazer login como administrador 			     |	Página HOME do administrador será exibida  |
+|			      |2| 		Clicar no botão editar ao lado de “MÚSICAS E CLIPES”   |	A página para fazer alteração nas músicas e clipes será exibida|
+|			      |3| 		Clicar no botão “adicionar música/clipe” 		     |	A página para fazer a adição da música/clipe na agenda será exibida|
+|			      |4| 		Clicar no botão “upload foto de capa”		     |	O sistema deve abrir explorador de arquivos local para selecionar a foto  |
+|			      |5| 		Preencher os campos solicitados			     |	Os campos devem receber os dados digitados 	|	
+|			      |6| 		Clicar no botão “confirmar cadastro”		     |	O sistema deve exibir a mensagem “Salvo com sucesso!” 	|
+|    |    |    |    |
+|Excluir música/clipe	      |1|		Fazer login como administrador 			     |	Página HOME do administrador será exibida  |
+|			      |2| 		Clicar no botão editar ao lado de “MÚSICAS E CLIPES”   |	A página para fazer alteração nas músicas e clipes será exibida|
+|			      |3| 		Clicar no botão “X” abaixo da foto de capa 		     |	O sistema deve exibir a mensagem “Deletado com sucesso!” |
+|    |    |    |    |
+|Dados incompletos para cadastro|1|		Acessar a página “Central de Fãs”		     |	Página CENTRAL DE FÃS será exibida  |
+|			               |2| 		Campo obrigatório não preenchido 	     |	O sistema deve exibir a mensagem “Preencha todos os campos!” |
 
 ## Ferramentas de Testes (Opcional)
 
@@ -28,6 +58,8 @@ Comente sobre as ferramentas de testes utilizadas.
 
 # Registro de Testes de Software
 
+### Requisitos Funcionais e Não Funcionais
+
 |	Tipo	|	Subtipo		|	Teste		| 	Resultado	| 	Data	 | 	Responsável 	| 	Descrição	|
 |------|----------|--------|------------|--------|---------------|------------|
 |	Funcional |	 Requisitos 	| RF001 - O sistema deve permitir o login e logout do administrador do site | OK | 03/12/2021| Amanda | Foi possível realizar login e logout|
@@ -41,6 +73,34 @@ Comente sobre as ferramentas de testes utilizadas.
 |	Não Funcional|	 Usabilidade	| RNF001 - O sistema deve ter boa usabilidade | OK |03/12/2021| Amanda | O site possui navegação fácil, é claro e objetivo, tendo pontos instintivos na hora do acesso |
 |	Não Funcional|	 Implementação	| RNF002 - O sistema deve ser responsivo| Falhou |03/12/2021| Amanda | O site é responsivo apenas em display desktop e tablet|
 |	Não Funcional|	 Segurança	| RNF003 - O sistema deve ser seguro para o usuário| OK |03/12/2021| Amanda | Foi possível realizar alterações no site somente após login como administrador |
+
+### Casos de Uso 
+
+|	Casos de Uso	|	ID	|	Teste		| 	Resultado	| 	Data	 | 	Responsável 	| 	Descrição	|
+|--------------|----|--------|------------|--------|---------------|------------|
+|	Fazer login 	      |1|		Acessar qualquer página do site			| OK | 03/12/2021| Luiz |Foi possível acessar a página de Home e ver seu conteúdo| 
+|			      |2| 		Clicar no botão superior direito “Acesso restrito” 	| OK | 03/12/2021| Luiz |	Foi possível acessar a página para se realizar login|	
+|			      |3| 			Informar usuário e senha		 	| OK | 03/12/2021| Luiz | Foi possível acessar a página de administrador |
+|    |    |    |    |
+|Cadastrar evento na agenda|1|		Fazer login como administrador 			     | OK | 03/12/2021| Luiz |	Foi possível realizar login e acessar a página de administrador  |
+|			      |2| 		Clicar no botão editar ao lado da palavra “AGENDA”	     | OK | 03/12/2021| Luiz |	Ao clicar no botão, fui redirecionada para a página de equivalência a edição da agenda|
+|			      |3| 		Clicar no botão “adicione novo evento” 		     | OK | 03/12/2021| Luiz |	Ao clicar no botão, fui redirecionada para a página de equivalência a adição de evento na agenda|
+|			      |4| 		Preencher os campos solicitados			     | OK | 03/12/2021| Luiz |	Foi possível preencher campos na tela de adição de evento|
+|			      |5| 		Clicar no botão check ao lado direito da página	| OK | 03/12/2021| Luiz | Foi possível enviar os dados e o sistema exibiu a mensagem “Salvo com sucesso”|
+|    |    |    |    |
+|Cadastrar nova música/clipe|1|		Fazer login como administrador 			     | OK | 03/12/2021| Luiz |	Foi possível realizar login e acessar a página de administrador |
+|			      |2| 		Clicar no botão editar ao lado de “MÚSICAS E CLIPES”   | OK | 03/12/2021| Luiz |	Ao clicar no botão, fui redirecionada para a página de equivalência a edição das músicas e clipes |
+|			      |3| 		Clicar no botão “adicionar música/clipe” 		     | OK | 03/12/2021| Luiz |	Ao clicar no botão, fui redirecionada para a página de equivalência a adição de música e clipe|
+|			      |4| 		Clicar no botão “upload foto de capa”		     | OK | 03/12/2021| Luiz |	Ao clicar no botão, o sistema abriu o explorador de arquivos local para selecionar a foto  |
+|			      |5| 		Preencher os campos solicitados			     | OK | 03/12/2021| Luiz |	Foi possível preencher campos na tela de adição de música e clipe	|	
+|			      |6| 		Clicar no botão “confirmar cadastro”		     | OK | 03/12/2021| Luiz |	Foi possível enviar os dados e o sistema exibiu a mensagem “Salvo com sucesso”|
+|    |    |    |    |
+|Excluir música/clipe	      |1|		Fazer login como administrador 			     | OK | 03/12/2021| Luiz |	Foi possível realizar login e acessar a página de administrador |
+|			      |2| 		Clicar no botão editar ao lado de “MÚSICAS E CLIPES”   | OK | 03/12/2021| Luiz |	Ao clicar no botão, fui redirecionada para a página de equivalência a edição das músicas e clipes |
+|			      |3| 		Clicar no botão “X” abaixo da foto de capa 		     | OK | 03/12/2021| Luiz |	Ao clicar no botão, o card foi excluído e o sistema exibiu a mensagem “Deletado com sucesso!” |
+|    |    |    |    |
+|Dados incompletos para cadastro|1|		Acessar a página “Central de Fãs”		     | OK | 03/12/2021| Luiz |	Foi possível acessar a página de Central de Fãs e ver seu conteúdo |
+|			               |2| 		Campo obrigatório não preenchido 	     | OK | 03/12/2021| Luiz |	Ao tentar submeter com campos vazios, o sistema exibiu a mensagem “Preencha todos os campos!” |
 
 ## Avaliação
 
