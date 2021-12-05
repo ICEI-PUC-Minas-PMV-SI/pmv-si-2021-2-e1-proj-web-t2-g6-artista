@@ -1,0 +1,61 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Ana Valin </title>
+        <meta name="Devs" content="Amanda Linhares e Luiz Rubioli">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylelogin.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+                @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Rock+Salt&display=swap');
+                </style>
+    </head>
+
+    <body id="body">              
+        <header> 
+                <h1>Ana Valin</h1>
+        </header>
+        <main>
+            <div class="voltar">
+                <button type="button" class="btnVoltar" onclick="location.href='/indexhome.html'"> voltar </button>
+              </div>
+              <!--inputs de login e senha para verificarem os dados e fazer a autenticação de login-->
+                <input type="text" id="login"  placeholder="login:"   /><br> <!-- LOGIN: anavalin-->
+                <input type="password" id="senha" placeholder="senha:" /> <!-- SENHA: projeto -->
+                <!--botão que verifica os dados para login-->
+                <button id="btnLogin" onclick="Login()" ></button>                                
+        </main>    
+        <footer class="rodape">             
+                <h6>2021 - TODOS OS DIREITOS RESERVADOS &copy; - ANAVALIN.COM.BR</h6>      
+        </footer>
+    </div>
+    </body>
+    <script>
+        //script para carregar a foto de fundo 
+        const fileUpload = localStorage.getItem('fileUpload')
+        document.addEventListener("DOMContentLoaded", () =>{         
+        if (fileUpload != null){
+            var bodyFoto = document.getElementById("body");
+            bodyFoto.style.backgroundImage = `url(${fileUpload})`;; 
+        }
+    })
+    function Login() {
+  var done = 0;
+  var usuario = document.getElementById('login').value;
+  usuario = usuario.toLowerCase();
+  var senha = document.getElementById('senha').value;
+  seha = senha.toLowerCase();
+
+  if (usuario === "anavalin" && senha === "projeto") {
+    window.location = "/indexhome.html";
+    done = 1;
+  }
+  if (done === 0) {
+    alert("Dados incorretos, tente novamente");
+
+  }
+}
+    </script>
+</html>

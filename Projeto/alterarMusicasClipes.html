@@ -1,0 +1,139 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Ana Valin </title>
+        <meta name="Devs" content="Amanda Linhares e Luiz Rubioli">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylealterarMusicasClipes.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+                @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Rock+Salt&display=swap');
+                </style>
+    </head>
+
+    <body id="body">       
+        <header>
+                <button type="button" class="btnAcessoRestrito" onclick="location.href='/indexhome.html'"> LOGOUT ADM  </button>
+                <h1>Ana Valin</h1>
+        </header>
+        <main>
+                <h2>MÚSICAS E CLIPES</h2>  
+                <button type="button" class="btnVoltar" onclick="location.href='/homeadm.html'"> voltar </button>
+                <button type="button" class="btnAddMusicaClipe" onclick="location.href='/addMusicasClipes.html'"> adicionar música / clipe  </button>
+                <!--local onde serão impresso os cards-->
+                <div class="conteudo" id="conteudo"> 
+                </div>                                             
+        </main>     
+        <footer class="rodape">             
+                <h6>2021 - TODOS OS DIREITOS RESERVADOS &copy; - ANAVALIN.COM.BR</h6>      
+        </footer>
+    </div>
+    </body>
+       <script>
+        //script para carregar a foto de fundo 
+        const fileUpload = localStorage.getItem('fileUpload')
+        document.addEventListener("DOMContentLoaded", () =>{  
+        if (fileUpload != null){
+            var bodyFoto = document.getElementById("body");
+            bodyFoto.style.backgroundImage = `url(${fileUpload})`;;          
+        }
+        const backgroundCard = localStorage.getItem('backgroundCard')
+        if (backgroundCard !== null){
+        var cardFoto = document.getElementById("card5");
+        cardFoto.style.backgroundImage = `url(${backgroundCard})`;;    
+        }
+        }) 
+        //novo card
+        var urlAppleM = localStorage.getItem('urlAppleM')
+        var urlDeezerM = localStorage.getItem('urlDeezerM')
+        var urlSpotifyM = localStorage.getItem('urlSpotifyM')
+        var urlTidalM = localStorage.getItem('urlTidalM')
+        var urlYoutubeM = localStorage.getItem('urlYoutubeM')
+           if(urlAppleM !== 'null' ){
+        var divconteudo = document.getElementById("conteudo")
+        divconteudo.innerHTML += ` <div class="card4" id="card5"><button type="button" class="btnExcluir" id="btnExcluir5" ></button></div>`
+    }
+        //card
+        var urlAppleM1 = localStorage.getItem('urlAppleM1')
+        var urlDeezerM1 = localStorage.getItem('urlDeezerM1')
+        var urlSpotifyM1 = localStorage.getItem('urlSpotifyM1')
+        var urlTidalM1 = localStorage.getItem('urlTidalM1')
+        var urlYoutubeM1 = localStorage.getItem('urlYoutubeM1')
+    if (urlAppleM1 !== 'null' ) { 
+        var divconteudo = document.getElementById("conteudo")
+        divconteudo.innerHTML += ` <div class="card" id="card"><button type="button" class="btnExcluir" id="btnExcluir1" ></button></div>`
+    }
+    //card1
+        var urlAppleM2 = localStorage.getItem('urlAppleM2')
+        var urlDeezerM2 = localStorage.getItem('urlDeezerM2')
+        var urlSpotifyM2 = localStorage.getItem('urlSpotifyM2')
+        var urlTidalM2 = localStorage.getItem('urlTidalM2')
+        var urlYoutubeM2 = localStorage.getItem('urlYoutubeM2')
+    if (urlAppleM2 !== 'null' ) {
+        var divconteudo = document.getElementById("conteudo")
+        divconteudo.innerHTML += ` <div class="card1" id="card1"><button type="button" class="btnExcluir" id="btnExcluir2" ></button></div>`
+    }
+        //card2
+        var urlAppleM3 = localStorage.getItem('urlAppleM3')
+        var urlDeezerM3 = localStorage.getItem('urlDeezerM3')
+        var urlSpotifyM3 = localStorage.getItem('urlSpotifyM3')
+        var urlTidalM3 = localStorage.getItem('urlTidalM3')
+        var urlYoutubeM3 = localStorage.getItem('urlYoutubeM3')
+    if (urlAppleM3 !== 'null' ) { 
+        var divconteudo = document.getElementById("conteudo")
+        divconteudo.innerHTML += ` <div class="card2" id="card2"><button type="button" class="btnExcluir" id="btnExcluir3" ></button></div>`
+    }
+    //card3
+        var urlAppleM4 = localStorage.getItem('urlAppleM4')
+        var urlDeezerM4 = localStorage.getItem('urlDeezerM4')
+        var urlSpotifyM4 = localStorage.getItem('urlSpotifyM4')
+        var urlTidalM4 = localStorage.getItem('urlTidalM4')
+        var urlYoutubeM4 = localStorage.getItem('urlYoutubeM4')
+    if (urlAppleM4 !== 'null' ) { 
+        var divconteudo = document.getElementById("conteudo")
+        divconteudo.innerHTML += ` <div class="card3" id="card3"><button type="button" class="btnExcluir" id="btnExcluir4" ></button></div>`
+    }
+    //deleta card
+        const deletaMusica1 = document.getElementById('btnExcluir1');
+        deletaMusica1.addEventListener('click', (e) => {
+        e.preventDefault();
+        alert("Deletado com sucesso!");
+        document.getElementById("card").remove();   
+        localStorage.setItem('urlAppleM1', 'null')
+    });
+       //deleta card1
+        const deletaMusica2 = document.getElementById('btnExcluir2');
+        deletaMusica2.addEventListener('click', (e) => {
+        e.preventDefault();
+        alert("Deletado com sucesso!");
+        document.getElementById("card1").remove();
+        localStorage.setItem('urlAppleM2', 'null')
+    });
+    //deleta card2
+        const deletaMusica3 = document.getElementById('btnExcluir3');
+        deletaMusica3.addEventListener('click', (e) => {
+        e.preventDefault();
+        alert("Deletado com sucesso!");
+        document.getElementById("card2").remove();
+        localStorage.setItem('urlAppleM3', 'null')
+    })
+    //deleta card3
+        const deletaMusica4 = document.getElementById('btnExcluir4');
+        deletaMusica4.addEventListener('click', (e) => {
+        e.preventDefault();
+        alert("Deletado com sucesso!");
+        document.getElementById("card3").remove();
+        localStorage.setItem('urlAppleM4', 'null')
+        })
+        //deleta card novo
+        const deletaMusica5 = document.getElementById('btnExcluir5');
+        deletaMusica5.addEventListener('click', (e) => {
+        e.preventDefault();
+        alert("Deletado com sucesso!");
+        document.getElementById("card5").remove(); 
+        localStorage.setItem('urlAppleM', 'null')
+    });
+    </script> 
+</html>

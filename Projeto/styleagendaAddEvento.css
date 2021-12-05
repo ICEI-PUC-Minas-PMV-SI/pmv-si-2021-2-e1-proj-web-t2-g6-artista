@@ -1,0 +1,274 @@
+*{
+    margin: 0px ;
+    padding: 0px ;
+    border: 0px;
+}
+body{
+    
+    background-image: url("fotos/fotof.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+header{
+    max-width: 100%;
+}
+.btnAcessoRestrito{
+
+    position: relative;
+    float: right;
+    width: 126px;
+    height: 25px;
+    background-color: #000000;
+    border: 0;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    color: #C52C2C;
+    cursor:pointer;
+    top: 35px;
+    right: 35px;
+}
+
+
+h1{
+    display: flex;
+    position: relative;
+    font-family: Rock Salt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 66px;
+    line-height: 229px;
+    color: #FFD234;
+    transform: rotate(-0.02deg);
+    left: 50px;
+    top: -20px;
+    max-width: 60%;
+
+}
+
+
+
+input:hover{
+    border:2px solid yellow;
+    
+}
+
+.btnOk:hover{
+    border:5px solid yellow;
+
+}
+.btnVoltar:hover{
+    border:3px solid yellow;
+
+}
+.btnAcessoRestrito:hover{
+    border:2px solid yellow;
+    
+}
+
+
+    .btnVoltar{
+
+        display: flex;
+        float:right;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-right: 80px;
+        background: #000000;
+        border: 3px solid #E5E5E5;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+        width: 110px;
+        height: 33px;
+        cursor: pointer;
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 25px;
+        color: white;
+    }
+
+
+
+
+.btnOk{
+
+   
+    background-image: url("fotos/ok.jpg");
+    float: right;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    border-radius: 100%;
+    padding: 0%;
+    background-size: cover;
+    cursor: pointer;
+    margin-right: 60px;
+    
+    
+
+}
+
+
+
+aside input{
+    
+   
+    background-color: transparent;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 18px;
+    color: #FAFF00;
+    
+}
+
+#AddData::-webkit-input-placeholder { 
+    
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: 900;
+    color: #FAFF00;
+    font-size: 20px;
+    
+
+}
+
+#AddLocal::-webkit-input-placeholder { 
+    
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: 900;
+    color: #FAFF00;
+    font-size: 20px;
+
+}
+
+#AddCP::-webkit-input-placeholder { 
+    
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: 900;
+    color: #FAFF00;
+    font-size: 18px;
+
+}
+
+
+#AddData{
+    position: relative;
+    top: 5px;
+    margin-left: 80px;
+    float: left;
+}
+
+#AddLocal{
+   
+    margin-top: 60px;
+    position: relative;
+    right: 257px;
+    margin-bottom: 10px;
+}
+
+#AddCP{
+    position: relative;
+    float:right;
+    margin-top: 5px;
+    left: 30px;
+    top: 50px;
+    width:230px;
+}
+
+.conteudo{
+
+    display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 95%;
+        height: 75%;
+        background: rgba(224, 172, 135, 0.3);
+        border-radius: 50px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+}
+
+    h2{
+        display: flex;
+        position: relative;
+        float: left;
+        width: 303px;
+        height: 95px;
+        left: 99px;
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 95px;
+        color: #E5E5E5;
+    }
+  
+
+    .abre {
+        display: flex;
+        position: relative;
+        width: 90%;
+        height: 0px;
+        border: 3px solid #000000;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 8px;
+    
+    }
+
+    .fecha{
+
+        display: flex;
+        position: relative;
+        width: 90%;
+        height: 0px;
+        border: 3px solid #000000;
+        margin-left: auto;
+        margin-right: auto;
+    
+   
+    }
+
+  @media (max-width:768px){
+
+    #AddCP{
+        
+        top: -40px;
+        left: -40px;
+        
+    }
+
+    .fecha{
+        top: -35px;
+    }
+    
+  }
+
+    .rodape{
+    height: 50px;
+    width:100%;
+    bottom:0;
+    line-height: 50px;
+    text-align: center;
+    background-color: #000;
+    clear: both;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+
+ }
+ 

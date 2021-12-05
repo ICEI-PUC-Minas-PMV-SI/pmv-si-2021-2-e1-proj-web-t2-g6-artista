@@ -1,0 +1,85 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Ana Valin </title>
+        <meta name="Devs" content="Amanda Linhares e Luiz Rubioli">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylecentralFasAdm.css">     
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+                @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Rock+Salt&display=swap');
+                </style>
+    </head>
+
+    <body id="body">
+        <header id=" header">
+            <button type="button" class="btnAcessoRestrito" onclick="location.href='/indexhome.html'"> LOGOUT ADM  </button>                 
+            <h1>Ana Valin</h1>
+        </header>
+        <main>
+                <button type="button" class="btnVoltar" onclick="location.href='/homeAdm.html'"> voltar </button>
+                <h2>CENTRAL DE FÃS</h2>
+                <!--botâo para exportar os dados da tabela contendo informações dos fãs em um arquivo excel-->                                
+                <button class="btnRelatorio" id="btnRelatorio">Exportar Excel</button>
+                <div class="conteudo" id="conteudo"></div> </main>
+        <footer class="rodape" id="rodape"> 
+                <h6>2021 - TODOS OS DIREITOS RESERVADOS &copy; - ANAVALIN.COM.BR</h6>
+        </footer>
+        <script>
+              //script para carregar a foto de fundo e carregar a tabela contendo informações dos fãs
+              const fileUpload = localStorage.getItem('fileUpload')
+            document.addEventListener("DOMContentLoaded", () =>{   
+            if (fileUpload != null){
+                var bodyFoto = document.getElementById("body");
+                bodyFoto.style.backgroundImage = `url(${fileUpload})`;;
+            }
+            var nomeFa1 = localStorage.getItem('nomeFa1')
+            var  emailFa1 = localStorage.getItem('emailFa1')
+            var telefoneFa1 = localStorage.getItem('telefoneFa1')
+            var divconteudo = document.getElementById("conteudo")
+             if(telefoneFa1 !== 'null' || telefoneFa1 !== "" ){
+                divconteudo.innerHTML +=  `<table id="datatable" style="display: block;">
+                    <tr>
+                        <td>Nome</td>
+                        <td>Telefone</td>
+                        <td>Email</td>
+                    </tr>
+                    <tr>
+                        <td id="nomeFa1">${nomeFa1};</td>
+                        <td id="telefoneFa1">${telefoneFa1}</td>
+                        <td id="emailFa1">${emailFa1}</td>
+                    </tr>`
+            }
+            var nomeFa2 = localStorage.getItem('nomeFa2')
+            var  emailFa2 = localStorage.getItem('emailFa2')
+            var telefoneFa2 = localStorage.getItem('telefoneFa2')
+            var divtable = document.getElementById("datatable")
+             if(telefoneFa2 !== 'null' || telefoneFa2 !== "" ){
+                divtable.innerHTML +=  `
+                <tr>
+                        <td id="nomeFa2">${nomeFa2}</td>
+                        <td id="telefoneFa2">${telefoneFa2}</td>
+                        <td id="emailFa2">${emailFa2}</td>
+                    </tr>
+                    <tr>`;
+            }
+            var nomeFa = localStorage.getItem('nomeFa')
+            var  emailFa = localStorage.getItem('emailFa')
+            var telefoneFa = localStorage.getItem('telefoneFa')
+            var divtable = document.getElementById("datatable")
+             if(telefoneFa !== 'null' || telefoneFa !== ""){
+                divtable.innerHTML +=  `
+                 <tr>
+                <td id="nomeFa">${nomeFa}</td>
+                        <td id="telefoneFa">${telefoneFa}</td>
+                        <td id="emailFa">${emailFa}</td>
+                    </tr>
+                </table>`
+            }
+        })
+        </script>
+    </body>
+</html>

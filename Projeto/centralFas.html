@@ -1,0 +1,65 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Ana Valin </title>
+        <meta name="Devs" content="Amanda Linhares e Luiz Rubioli">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylecentralFas.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Rock+Salt&display=swap');
+                </style>
+    </head>
+
+    <body id="body">
+        <header>
+            <button type="button" class="btnAcessoRestrito" onclick="location.href='/login.html'"> ACESSO RESTRITO </button>                 
+            <h1>Ana Valin</h1>
+        </header>
+        <main>
+                <button type="button" class="btnVoltar" onclick="location.href='/indexhome.html'"> voltar </button>
+                <h2>CENTRAL DE FÃS</h2>
+                <div class="conteudo"> 
+                        <h4>CADASTRE SEUS DADOS PARA CONTEÚDO EXCLUSIVO</h4>
+                        <!--inputs para armazenarem os valores das novas urls-->
+                        <input  type="text" id="Nome"placeholder= "INSIRA SEU NOME" >
+                        <input  type="text" id="Telefone"placeholder= "INSIRA SEU TELEFONE CELULAR" >
+                        <input  type="email" id="Email"placeholder= "INSIRA SEU EMAIL" > 
+                        <!--botâo submit para salvar os dados e fazer as alterações-->                    
+                        <button type="submit" id="btnOk" ></button>
+                </div>                                 
+        </main>     
+        <footer class="rodape"> 
+                <h6>2021 - TODOS OS DIREITOS RESERVADOS &copy; - ANAVALIN.COM.BR</h6>
+        </footer>
+    </body>
+    <script >
+          //script para carregar a foto de fundo
+          const fileUpload = localStorage.getItem('fileUpload')
+        document.addEventListener("DOMContentLoaded", () =>{            
+                  
+        if (fileUpload != null){
+            var bodyFoto = document.getElementById("body");
+            bodyFoto.style.backgroundImage = `url(${fileUpload})`;; 
+        }
+    })
+        //script para ao clicar no botao submit receber os valores de todos os inputs e salvá-los no localStorage 
+        const btnAltInfo = document.getElementById('btnOk');
+        btnAltInfo.addEventListener('click', (e) => {
+        let nomeFa = document.getElementById('Nome').value;     
+        let emailFa = document.getElementById('Email').value;
+        let telefoneFa = document.getElementById('Telefone').value;
+        if (nomeFa,emailFa,telefoneFa === "null" || nomeFa,emailFa,telefoneFa === ""){
+            alert ("Preencha todos os campos!")
+        }
+        else{
+            localStorage.setItem('nomeFa', nomeFa) 
+            localStorage.setItem('emailFa', emailFa)
+            localStorage.setItem('telefoneFa', telefoneFa)  
+            alert("Salvo com sucesso!");
+            location.reload();}     
+    })      
+    </script>
+</html>

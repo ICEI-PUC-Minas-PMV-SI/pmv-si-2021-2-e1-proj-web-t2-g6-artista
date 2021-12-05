@@ -1,0 +1,323 @@
+*{
+    margin: 0px ;
+    padding: 0px ;
+    border: 0px;
+}
+body{
+    background-image: url("fotos/fotof.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+   
+
+    
+}
+
+#informativo{
+ 
+    
+    font-size: 14px;
+    top: 130px;
+    left: 30px;
+    position: absolute;
+    color:yellow;
+    font-weight: bolder;
+    
+    
+}
+aside{
+    
+    display: flex;
+    flex-flow: wrap;
+    
+}
+
+header{
+    max-width: 100%;
+}
+
+
+.btnAcessoRestrito{
+
+    position: relative;
+    float: right;
+    width: 126px;
+    height: 25px;
+    background-color: #000000;
+    border: 0;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    color: #C52C2C;
+    cursor:pointer;
+    top: 35px;
+    right: 35px;
+}
+
+
+h1{
+    
+   
+    position: relative;
+    font-family: Rock Salt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 66px;
+    line-height: 229px;
+    color: #FFD234;
+    transform: rotate(-0.02deg);
+    left: 50px;
+    top: -20px;
+    max-width:60%;
+
+
+}
+
+
+.btnConfirmarCadastro{
+   
+    flex-shrink: 0;
+    position: relative;
+    left: 290px;
+    top: -70px;
+    background: red;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    width: 299px;
+    height: 52px;
+    font-family: Roboto Slab;
+    font-style: bold;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 33px;
+    text-decoration-line: underline;
+    color: #000000;
+    cursor: pointer;
+  
+}
+
+label{
+   
+    
+    padding: 30px;
+    text-align: center;
+    line-height: 20px;
+    background-color:red ;
+    position:relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000000;
+    right: 210px;
+    top: 150px;
+    cursor: pointer;
+    
+     
+}
+
+.btnAcessoRestrito:hover{
+    border:2px solid yellow;
+    
+}
+
+label:hover{
+    border:3px solid yellow;
+    
+}
+
+.btnConfirmarCadastro:hover{
+    border:3px solid yellow;
+
+}
+
+.btnVoltar:hover{
+    border:3px solid yellow;
+
+}
+
+.card input:hover{
+    border:3px solid yellow;
+}
+
+
+
+    .btnVoltar{
+
+        position: relative;
+        justify-content: center;
+        right: 70px;
+        top: 250px;
+        background: #000000;
+        border: 3px solid #E5E5E5;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+        width: 110px;
+        height: 33px;
+        cursor: pointer;
+        float: left;
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 25px;
+        color: white;
+     
+       
+    }
+
+
+    .card{
+
+        
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 140px;
+        width: 270px;
+        height: 400px;
+        margin-top: 30px;
+        margin-bottom: 30px;  
+        background: #C4C4C4;
+       
+    }
+
+    .card input{
+        
+        width: 220px;
+        height: 63px;
+        background: rgba(141, 60, 2, 0.3);
+        border-radius: 50px;
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 16px;
+        color: #000000;
+        cursor: pointer;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 20px;
+
+        
+
+    }
+    .Uploadd::-webkit-input-placeholder { 
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        color: #000000;
+        font-size: 16px;
+        line-height: 16px;
+        padding-left: 5px;
+        
+        
+    }
+
+    .Uploadd1::-webkit-input-placeholder { 
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 16px;
+        color: #000000;
+        padding-left: 20px;
+
+        
+        
+        
+    }
+
+
+    
+
+    #btnApple{
+        margin-top: 30px;
+    }
+
+    
+
+
+   
+
+    h2{
+        display: flex;
+        position: relative;
+        top: 50px;
+        margin-top: 50px;
+        left: 80px;
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        color: #E5E5E5;
+        text-align: center;
+        
+      
+        
+    }
+    .conteudo{
+
+        display: flex;
+        position: relative;
+        width: 60%;
+        height: 40%;
+        background: rgba(224, 172, 135, 0.3);
+        border-radius: 50px;
+        float: right;
+        top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+        
+}
+
+
+
+@media (max-width: 768px){
+    h2{
+        top: 10px;
+        left:70px;
+    }
+
+    .btnVoltar{
+        top: 75px;
+        left: 200px;
+    }
+
+    .btnConfirmarCadastro{
+        margin-right: 20px;
+    }
+
+    .conteudo{
+        width: 700px;
+        height: 40%;
+    }
+
+}
+    .rodape{
+    
+        
+    height: 50px;
+    width:100%;
+    bottom:0;
+    line-height: 50px;
+    text-align: center;
+    background-color: #000;
+    clear: both;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-top: auto;
+
+ }
+ 
+ 

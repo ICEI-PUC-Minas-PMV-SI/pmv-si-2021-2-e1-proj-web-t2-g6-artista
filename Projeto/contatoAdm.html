@@ -1,0 +1,78 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Ana Valin </title>
+        <meta name="Devs" content="Amanda Linhares e Luiz Rubioli">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylecontatoAdm.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+                @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Rock+Salt&display=swap');
+                </style>
+    </head>
+
+    <body id="body">
+        <header>
+            <button type="button" class="btnAcessoRestrito" onclick="location.href='/indexhome.html'"> LOGOUT ADM  </button>s                 
+            <h1>Ana Valin</h1>
+        </header>
+        <main>
+                <button type="button" class="btnVoltar" onclick="location.href='/homeAdm.html'"> voltar </button>
+                <h2>CONTATO</h2>
+                <div class="conteudo">
+                    <div class="card">
+                        <h3> TELEFONE <br></h3>
+                        <!--input para capturar os valores do novo telefone-->
+                        <input  type="text" id="Telefone"placeholder= "INSIRA SEU TELEFONE CELULAR" >
+                         <!--botâo submit para salvar os dados e fazer as alterações-->
+                        <button type="submit" class="btnAltInfo" id="btnAltInfo"></button>   
+                     </div>
+                     <div class="card1">
+                        <h3> EMAIL <br></h3>
+                        <!--input para capturar os valores do novo email-->
+                        <input  type="email" id="Email"placeholder= "INSIRA SEU EMAIL" >
+                         <!--botâo submit para salvar os dados e fazer as alterações-->
+                        <button type="submit" class="btnAltInfo1" id="btnAltInfo1" ></button>   
+                     </div>
+                </div>                                       
+        </main>       
+        <footer class="rodape"> 
+                <h6>2021 - TODOS OS DIREITOS RESERVADOS &copy; - ANAVALIN.COM.BR</h6>
+        </footer>
+    </body>   
+    <script >
+        //script para carregar a foto de fundo
+          const fileUpload = localStorage.getItem('fileUpload')
+        document.addEventListener("DOMContentLoaded", () =>{                
+        if (fileUpload != null){
+            var bodyFoto = document.getElementById("body");
+            bodyFoto.style.backgroundImage = `url(${fileUpload})`;;
+        }
+    })
+    //script para ao clicar no botao submit receber os valores de todos os inputs e salvá-los no localStorage 
+        const btnAltInfo = document.getElementById('btnAltInfo');
+        btnAltInfo.addEventListener('click', (e) => {
+        let telefoneC = document.getElementById('Telefone').value;
+        if (telefoneC === "null" || telefoneC === ""){
+            alert ("Insira um telefone!")
+        }
+        else{
+        localStorage.setItem('telefoneC', telefoneC) 
+        alert("Salvo com sucesso!");}
+       
+    })
+    //script para ao clicar no botao submit receber os valores de todos os inputs e salvá-los no localStorage 
+        const btnAltInfo1 = document.getElementById('btnAltInfo1');
+        btnAltInfo1.addEventListener('click', (e) => {
+        let emailC = document.getElementById('Email').value;
+        if (emailC === "null" || emailC === ""){
+            alert ("Insira um email!")
+        }
+        else{
+        localStorage.setItem('emailC', emailC) 
+        alert("Salvo com sucesso!"); }
+    })
+    </script>
+</html>
