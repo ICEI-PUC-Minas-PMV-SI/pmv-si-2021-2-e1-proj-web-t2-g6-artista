@@ -7,7 +7,6 @@
         <meta name="Devs" content="Amanda Linhares e Luiz Rubioli">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="stylecentralFasAdm.css">     
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
                 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Rock+Salt&display=swap');
@@ -24,10 +23,12 @@
                 <h2>CENTRAL DE FÃS</h2>
                 <!--botâo para exportar os dados da tabela contendo informações dos fãs em um arquivo excel-->                                
                 <button class="btnRelatorio" id="btnRelatorio">Exportar Excel</button>
-                <div class="conteudo" id="conteudo"></div> </main>
+                <div class="conteudo" id="conteudo"></div> 
+            </main>
         <footer class="rodape" id="rodape"> 
                 <h6>2021 - TODOS OS DIREITOS RESERVADOS &copy; - ANAVALIN.COM.BR</h6>
         </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>
               //script para carregar a foto de fundo e carregar a tabela contendo informações dos fãs
               const fileUpload = localStorage.getItem('fileUpload')
@@ -42,7 +43,7 @@
             var divconteudo = document.getElementById("conteudo")
              if(telefoneFa1 !== 'null' || telefoneFa1 !== "" ){
                 divconteudo.innerHTML +=  `<table id="datatable" style="display: block;">
-                    <tr>
+                    <tr id= "cabecalho">
                         <td>Nome</td>
                         <td>Telefone</td>
                         <td>Email</td>
@@ -63,8 +64,19 @@
                         <td id="nomeFa2">${nomeFa2}</td>
                         <td id="telefoneFa2">${telefoneFa2}</td>
                         <td id="emailFa2">${emailFa2}</td>
-                    </tr>
-                    <tr>`;
+                    </tr>`;
+            }
+            var nomeFa3 = localStorage.getItem('nomeFa3')
+            var  emailFa3 = localStorage.getItem('emailFa3')
+            var telefoneFa3 = localStorage.getItem('telefoneFa3')
+            var divtable = document.getElementById("datatable")
+             if(telefoneFa3 !== 'null' || telefoneFa3 !== "" ){
+                divtable.innerHTML +=  `
+                <tr>
+                        <td id="nomeFa3">${nomeFa3}</td>
+                        <td id="telefoneFa3">${telefoneFa3}</td>
+                        <td id="emailFa3">${emailFa3}</td>
+                    </tr>`;
             }
             var nomeFa = localStorage.getItem('nomeFa')
             var  emailFa = localStorage.getItem('emailFa')
@@ -80,6 +92,21 @@
                 </table>`
             }
         })
+
+        //script que exporta a tabela para um documento excel
+        $(document).ready(function(){
+            $("#btnRelatorio").click(function(e){
+                e.preventDefault();
+                var conteudo = document.getElementById('conteudo');
+                var dados = new Blob(['\ufeff' + conteudo.outerHTML], {type:'application/vnd.ms-excel'});
+                var url = window.URL.createObjectURL(dados);
+                var a = document.createElement('a');
+                a.href = url;
+                a.download = 'Relatório Fãs'
+                a.click();
+
+            });
+        });
         </script>
     </body>
 </html>
