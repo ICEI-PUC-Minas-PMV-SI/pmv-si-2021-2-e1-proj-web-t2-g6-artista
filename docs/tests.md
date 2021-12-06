@@ -68,7 +68,7 @@ Comente sobre as ferramentas de testes utilizadas.
 |	Funcional |	 Requisitos 	| RF004 - O sistema deve permitir o gerenciamento das url’s de músicas / clipes e fotos de capa| OK | 03/12/2021| Amanda | Foi possível adicionar ou excluir card contendo url’s e foto de capa|
 |	Funcional |	 Requisitos 	| RF005 - O sistema deve permitir o gerenciamento da biografia| OK |03/12/2021| Amanda | Foi possível inserir novo texto na biografia|
 |	Funcional |	 Requisitos 	| RF006 - O sistema deve permitir o cadastro de fãs| OK | 03/12/2021| Amanda | Foi possível cadastrar dados |
-|	Funcional |	 Requisitos 	| RF007 - O sistema deve gerar relatório de cadastro de fãs| Falhou |03/12/2021 | Amanda | Não foi possível fazer o download do relatório |
+|	Funcional |	 Requisitos 	| RF007 - O sistema deve gerar relatório de cadastro de fãs| OK |06/12/2021 | Amanda | Foi possível fazer o download do relatório |
 |	Funcional |	 Requisitos 	| RF008 - O sistema deve permitir o gerenciamento dos dados de contato| OK | 03/12/2021| Amanda | Foi possível alterar dados de contato |
 |	Não Funcional|	 Usabilidade	| RNF001 - O sistema deve ter boa usabilidade | OK |03/12/2021| Amanda | O site possui navegação fácil, é claro e objetivo, tendo pontos instintivos na hora do acesso |
 |	Não Funcional|	 Implementação	| RNF002 - O sistema deve ser responsivo| Falhou |03/12/2021| Amanda | O site é responsivo apenas em display desktop e tablet|
