@@ -6,7 +6,7 @@ São apresentadas a seguir as funcionalidades do sistema que eram previstas nos 
 
 A tela de acesso de restrito apresenta meios de inserir email e senha para realização do login como administrador no site.
 
-![Sem título](https://user-images.githubusercontent.com/85028708/144726714-f9c98d67-a1ad-4b2f-a09e-2e117bcbd25f.png)
+![login](https://user-images.githubusercontent.com/85028708/145218605-6bc5451e-9039-4e26-a2ec-ae0694894ab5.png)
 
 #### Requisitos Atendidos
 RF001 - O sistema deve permitir o login e logout do administrador do site
@@ -86,13 +86,14 @@ RF006 - O sistema deve permitir o cadastro de fãs
 
 A tela CENTRAL DE FÃS do administrador apresenta meios para baixar relatório dos dados dos fãs cadastrados. 
 
-![fasadm](https://user-images.githubusercontent.com/85028708/144726807-39f45ee8-5b1c-44bc-b142-dcc72117465a.png)
+![centralFãsadm](https://user-images.githubusercontent.com/85028708/145218643-9292c849-a68a-486a-b97f-d9b9575bfe67.png)
+
 
 #### Requisitos Atendidos
 RF008 - O sistema deve permitir o gerenciamento dos dados de contato
 
 #### Instruções de Acesso
-1 - Abra o navegador e informe o endereço da página;<br>
+1 - Abra o Go live na página indexhome.html;<br>
 2 - Na aba HOME, clique em acesso restrito; <br>
 3 - Preencha os dados de acesso e clique na chave para logar; <br>
 4 - Na HOME do administrador, clique no botão editar ao lado de “CENTRAL DE FÃS”; <br>
