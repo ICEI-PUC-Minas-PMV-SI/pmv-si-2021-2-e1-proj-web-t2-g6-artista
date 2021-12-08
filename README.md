@@ -24,8 +24,7 @@ A aplicação Web serve como vitrine para o trabalho da artista Ana Valin sendo 
 [Especificação do Projeto](docs/especification.md) <br> 
 [Projeto de Interface](docs/interface.md) <br> 
 [Template Padrão](docs/template.md)  <br>
-[Programação de Funcionalidades - HTML e CSS](docs/development.md)  <br>
-[Programação de Funcionalidades - Javascript](docs/development.md) <br> 
+[Programação de Funcionalidades - HTML, CSS e Javascript](docs/development.md)  <br> 
 [Testes de Software ](docs/tests.md)  <br>
 [Apresentação](presentation/README.md) 
 
