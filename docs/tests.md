@@ -44,18 +44,6 @@
 |Dados incompletos para cadastro|1|		Acessar a página “Central de Fãs”		     |	Página CENTRAL DE FÃS será exibida  |
 |			               |2| 		Campo obrigatório não preenchido 	     |	O sistema deve exibir a mensagem “Preencha todos os campos!” |
 
-## Ferramentas de Testes (Opcional)
-
-Comente sobre as ferramentas de testes utilizadas.
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
-
 # Registro de Testes de Software
 
 ### Requisitos Funcionais e Não Funcionais
@@ -101,10 +89,3 @@ Comente sobre as ferramentas de testes utilizadas.
 |    |    |    |    |
 |Dados incompletos para cadastro|1|		Acessar a página “Central de Fãs”		     | OK | 03/12/2021| Luiz |	Foi possível acessar a página de Central de Fãs e ver seu conteúdo |
 |			               |2| 		Campo obrigatório não preenchido 	     | OK | 03/12/2021| Luiz |	Ao tentar submeter com campos vazios, o sistema exibiu a mensagem “Preencha todos os campos!” |
-
-## Avaliação
-
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
-
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
