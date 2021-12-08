@@ -12,9 +12,9 @@ A tela de acesso de restrito apresenta meios de inserir email e senha para reali
 RF001 - O sistema deve permitir o login e logout do administrador do site
 
 #### Instruções de Acesso
-1 - Abra o navegador e informe o endereço da página; <br>
-2 - Na aba HOME, clique em acesso restrito; <br>
-3 - Preencha os dados de acesso e clique na chave para logar.
+1 - Abra o Go live na página indexhome.html <br>
+2 - Na aba HOME, clique em acesso restrito <br>
+3 - Preencha os dados de acesso e clique na chave para logar
 
 ### Cadastro e gerenciamento de dados (RF-002, RF-003, RF-004, RF-005, RF-008)
 
@@ -62,11 +62,11 @@ RF005 - O sistema deve permitir o gerenciamento da biografia <br>
 RF008 - O sistema deve permitir o gerenciamento dos dados de contato
 
 #### Instruções de Acesso
-1 - Abra o navegador e informe o endereço da página; <br>
-2 - Na aba HOME, clique em acesso restrito; <br>
-3 - Preencha os dados de acesso e clique na chave para logar; <br>
-4 - Na HOME do administrador, clique no botão editar da página em que deseja realizar alterações; <br>
-5 - Preencha os dados solicitados da área em questão e os salve.
+1 - Abra o Go live na página indexhome.html <br>
+2 - Na aba HOME, clique em acesso restrito <br>
+3 - Preencha os dados de acesso e clique na chave para logar <br>
+4 - Na HOME do administrador, clique no botão editar da página em que deseja realizar alterações <br>
+5 - Preencha os dados solicitados da área em questão e os salve
 
 ### Cadastro de fãs (RF-006)
 
@@ -78,9 +78,9 @@ A tela CENTRAL DE FÃS apresenta meios para cadastrar nome, telefone e email.
 RF006 - O sistema deve permitir o cadastro de fãs
 
 #### Instruções de Acesso
-1 - Abra o navegador e informe o endereço da página;<br>
-2 - Na aba HOME, clique em CENTRAL DE FÃS;<br>
-3 - Preencha os dados solicitados e clique no check para se cadastrar.
+1 - Abra o Go live na página indexhome.html<br>
+2 - Na aba HOME, clique em CENTRAL DE FÃS<br>
+3 - Preencha os dados solicitados e clique no check para se cadastrar
 
 ### Relatório de fãs (RF-008)
 
@@ -93,8 +93,8 @@ A tela CENTRAL DE FÃS do administrador apresenta meios para baixar relatório d
 RF008 - O sistema deve permitir o gerenciamento dos dados de contato
 
 #### Instruções de Acesso
-1 - Abra o Go live na página indexhome.html;<br>
-2 - Na aba HOME, clique em acesso restrito; <br>
-3 - Preencha os dados de acesso e clique na chave para logar; <br>
-4 - Na HOME do administrador, clique no botão editar ao lado de “CENTRAL DE FÃS”; <br>
-5 - Clique no botão baixar relatório.
+1 - Abra o Go live na página indexhome.html<br>
+2 - Na aba HOME, clique em acesso restrito <br>
+3 - Preencha os dados de acesso e clique na chave para logar <br>
+4 - Na HOME do administrador, clique no botão editar ao lado de “CENTRAL DE FÃS” <br>
+5 - Clique no botão baixar relatório
